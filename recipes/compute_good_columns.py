@@ -52,7 +52,22 @@ df29 = df[["data.result.29.metric","data.result.29.values"]]
 df0.head()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-for key, value in df0["data.result.0.metric"]df0["data.result.0.metric"].items():
+dict = df0["data.result.0.metric"]
+
+for key, value in dict.items():
+    
+    print(key, '->', dict[key])
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+dict = df0["data.result.0.metric"]
+
+for key in dict:
+    
+    print(key)
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+broker
+for key, value in df0["data.result.0.metric"].items():
     if key == "hostname":
         print(value)
     else :
@@ -62,8 +77,6 @@ for key, value in df0["data.result.0.metric"]df0["data.result.0.metric"].items()
 df0["data.result.0.metric"].items()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-good_columns_df = df # For this sample code, simply copy input to output
-
 # Write recipe outputs
-good_columns = dataiku.Dataset("good_columns")
-good_columns.write_with_schema(good_columns_df)
+#good_columns = dataiku.Dataset("good_columns")
+#good_columns.write_with_schema(df)
