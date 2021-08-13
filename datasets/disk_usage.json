@@ -23,7 +23,7 @@
     }
   },
   "formatParams": {
-    "maxExpansionDepth": 4,
+    "maxExpansionDepth": 3,
     "nestedArraysHandling": "FLATTEN",
     "extractFromSingleElement": false,
     "nestedArraysMaxElements": 100,
@@ -36,11 +36,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "rayan"
     },
-    "lastModifiedOn": 1628856843002
+    "lastModifiedOn": 1628860769915
   },
   "creationTag": {
     "versionNumber": 0,
@@ -73,363 +73,123 @@
         "type": "string"
       },
       {
-        "name": "data.result.0.metric",
+        "name": "data.result.0",
         "type": "string"
       },
       {
-        "name": "data.result.0.values_TRUNCATED",
+        "name": "data.result.1",
         "type": "string"
       },
       {
-        "name": "data.result.0.values",
+        "name": "data.result.2",
         "type": "string"
       },
       {
-        "name": "data.result.1.metric",
+        "name": "data.result.3",
         "type": "string"
       },
       {
-        "name": "data.result.1.values_TRUNCATED",
+        "name": "data.result.4",
         "type": "string"
       },
       {
-        "name": "data.result.1.values",
+        "name": "data.result.5",
         "type": "string"
       },
       {
-        "name": "data.result.2.metric",
+        "name": "data.result.6",
         "type": "string"
       },
       {
-        "name": "data.result.2.values_TRUNCATED",
+        "name": "data.result.7",
         "type": "string"
       },
       {
-        "name": "data.result.2.values",
+        "name": "data.result.8",
         "type": "string"
       },
       {
-        "name": "data.result.3.metric",
+        "name": "data.result.9",
         "type": "string"
       },
       {
-        "name": "data.result.3.values_TRUNCATED",
+        "name": "data.result.10",
         "type": "string"
       },
       {
-        "name": "data.result.3.values",
+        "name": "data.result.11",
         "type": "string"
       },
       {
-        "name": "data.result.4.metric",
+        "name": "data.result.12",
         "type": "string"
       },
       {
-        "name": "data.result.4.values_TRUNCATED",
+        "name": "data.result.13",
         "type": "string"
       },
       {
-        "name": "data.result.4.values",
+        "name": "data.result.14",
         "type": "string"
       },
       {
-        "name": "data.result.5.metric",
+        "name": "data.result.15",
         "type": "string"
       },
       {
-        "name": "data.result.5.values_TRUNCATED",
+        "name": "data.result.16",
         "type": "string"
       },
       {
-        "name": "data.result.5.values",
+        "name": "data.result.17",
         "type": "string"
       },
       {
-        "name": "data.result.6.metric",
+        "name": "data.result.18",
         "type": "string"
       },
       {
-        "name": "data.result.6.values_TRUNCATED",
+        "name": "data.result.19",
         "type": "string"
       },
       {
-        "name": "data.result.6.values",
+        "name": "data.result.20",
         "type": "string"
       },
       {
-        "name": "data.result.7.metric",
+        "name": "data.result.21",
         "type": "string"
       },
       {
-        "name": "data.result.7.values_TRUNCATED",
+        "name": "data.result.22",
         "type": "string"
       },
       {
-        "name": "data.result.7.values",
+        "name": "data.result.23",
         "type": "string"
       },
       {
-        "name": "data.result.8.metric",
+        "name": "data.result.24",
         "type": "string"
       },
       {
-        "name": "data.result.8.values_TRUNCATED",
+        "name": "data.result.25",
         "type": "string"
       },
       {
-        "name": "data.result.8.values",
+        "name": "data.result.26",
         "type": "string"
       },
       {
-        "name": "data.result.9.metric",
+        "name": "data.result.27",
         "type": "string"
       },
       {
-        "name": "data.result.9.values_TRUNCATED",
+        "name": "data.result.28",
         "type": "string"
       },
       {
-        "name": "data.result.9.values",
-        "type": "string"
-      },
-      {
-        "name": "data.result.10.metric",
-        "type": "string"
-      },
-      {
-        "name": "data.result.10.values_TRUNCATED",
-        "type": "string"
-      },
-      {
-        "name": "data.result.10.values",
-        "type": "string"
-      },
-      {
-        "name": "data.result.11.metric",
-        "type": "string"
-      },
-      {
-        "name": "data.result.11.values_TRUNCATED",
-        "type": "string"
-      },
-      {
-        "name": "data.result.11.values",
-        "type": "string"
-      },
-      {
-        "name": "data.result.12.metric",
-        "type": "string"
-      },
-      {
-        "name": "data.result.12.values_TRUNCATED",
-        "type": "string"
-      },
-      {
-        "name": "data.result.12.values",
-        "type": "string"
-      },
-      {
-        "name": "data.result.13.metric",
-        "type": "string"
-      },
-      {
-        "name": "data.result.13.values_TRUNCATED",
-        "type": "string"
-      },
-      {
-        "name": "data.result.13.values",
-        "type": "string"
-      },
-      {
-        "name": "data.result.14.metric",
-        "type": "string"
-      },
-      {
-        "name": "data.result.14.values_TRUNCATED",
-        "type": "string"
-      },
-      {
-        "name": "data.result.14.values",
-        "type": "string"
-      },
-      {
-        "name": "data.result.15.metric",
-        "type": "string"
-      },
-      {
-        "name": "data.result.15.values_TRUNCATED",
-        "type": "string"
-      },
-      {
-        "name": "data.result.15.values",
-        "type": "string"
-      },
-      {
-        "name": "data.result.16.metric",
-        "type": "string"
-      },
-      {
-        "name": "data.result.16.values_TRUNCATED",
-        "type": "string"
-      },
-      {
-        "name": "data.result.16.values",
-        "type": "string"
-      },
-      {
-        "name": "data.result.17.metric",
-        "type": "string"
-      },
-      {
-        "name": "data.result.17.values_TRUNCATED",
-        "type": "string"
-      },
-      {
-        "name": "data.result.17.values",
-        "type": "string"
-      },
-      {
-        "name": "data.result.18.metric",
-        "type": "string"
-      },
-      {
-        "name": "data.result.18.values_TRUNCATED",
-        "type": "string"
-      },
-      {
-        "name": "data.result.18.values",
-        "type": "string"
-      },
-      {
-        "name": "data.result.19.metric",
-        "type": "string"
-      },
-      {
-        "name": "data.result.19.values_TRUNCATED",
-        "type": "string"
-      },
-      {
-        "name": "data.result.19.values",
-        "type": "string"
-      },
-      {
-        "name": "data.result.20.metric",
-        "type": "string"
-      },
-      {
-        "name": "data.result.20.values_TRUNCATED",
-        "type": "string"
-      },
-      {
-        "name": "data.result.20.values",
-        "type": "string"
-      },
-      {
-        "name": "data.result.21.metric",
-        "type": "string"
-      },
-      {
-        "name": "data.result.21.values_TRUNCATED",
-        "type": "string"
-      },
-      {
-        "name": "data.result.21.values",
-        "type": "string"
-      },
-      {
-        "name": "data.result.22.metric",
-        "type": "string"
-      },
-      {
-        "name": "data.result.22.values_TRUNCATED",
-        "type": "string"
-      },
-      {
-        "name": "data.result.22.values",
-        "type": "string"
-      },
-      {
-        "name": "data.result.23.metric",
-        "type": "string"
-      },
-      {
-        "name": "data.result.23.values_TRUNCATED",
-        "type": "string"
-      },
-      {
-        "name": "data.result.23.values",
-        "type": "string"
-      },
-      {
-        "name": "data.result.24.metric",
-        "type": "string"
-      },
-      {
-        "name": "data.result.24.values_TRUNCATED",
-        "type": "string"
-      },
-      {
-        "name": "data.result.24.values",
-        "type": "string"
-      },
-      {
-        "name": "data.result.25.metric",
-        "type": "string"
-      },
-      {
-        "name": "data.result.25.values_TRUNCATED",
-        "type": "string"
-      },
-      {
-        "name": "data.result.25.values",
-        "type": "string"
-      },
-      {
-        "name": "data.result.26.metric",
-        "type": "string"
-      },
-      {
-        "name": "data.result.26.values_TRUNCATED",
-        "type": "string"
-      },
-      {
-        "name": "data.result.26.values",
-        "type": "string"
-      },
-      {
-        "name": "data.result.27.metric",
-        "type": "string"
-      },
-      {
-        "name": "data.result.27.values_TRUNCATED",
-        "type": "string"
-      },
-      {
-        "name": "data.result.27.values",
-        "type": "string"
-      },
-      {
-        "name": "data.result.28.metric",
-        "type": "string"
-      },
-      {
-        "name": "data.result.28.values_TRUNCATED",
-        "type": "string"
-      },
-      {
-        "name": "data.result.28.values",
-        "type": "string"
-      },
-      {
-        "name": "data.result.29.metric",
-        "type": "string"
-      },
-      {
-        "name": "data.result.29.values_TRUNCATED",
-        "type": "string"
-      },
-      {
-        "name": "data.result.29.values",
+        "name": "data.result.29",
         "type": "string"
       }
     ],
