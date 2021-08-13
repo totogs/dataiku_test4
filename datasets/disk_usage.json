@@ -23,8 +23,8 @@
     }
   },
   "formatParams": {
-    "maxExpansionDepth": -1,
-    "nestedArraysHandling": "PRESERVE",
+    "maxExpansionDepth": 3,
+    "nestedArraysHandling": "FLATTEN",
     "extractFromSingleElement": false,
     "nestedArraysMaxElements": 100,
     "nestedArraysMaxContentSize": 300000,
@@ -36,11 +36,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
-      "login": "alexis"
+      "login": "rayan"
     },
-    "lastModifiedOn": 1628852672850
+    "lastModifiedOn": 1628856773534
   },
   "creationTag": {
     "versionNumber": 0,
@@ -73,11 +73,123 @@
         "type": "string"
       },
       {
-        "name": "data.result_TRUNCATED",
+        "name": "data.result.0",
         "type": "string"
       },
       {
-        "name": "data.result",
+        "name": "data.result.1",
+        "type": "string"
+      },
+      {
+        "name": "data.result.2",
+        "type": "string"
+      },
+      {
+        "name": "data.result.3",
+        "type": "string"
+      },
+      {
+        "name": "data.result.4",
+        "type": "string"
+      },
+      {
+        "name": "data.result.5",
+        "type": "string"
+      },
+      {
+        "name": "data.result.6",
+        "type": "string"
+      },
+      {
+        "name": "data.result.7",
+        "type": "string"
+      },
+      {
+        "name": "data.result.8",
+        "type": "string"
+      },
+      {
+        "name": "data.result.9",
+        "type": "string"
+      },
+      {
+        "name": "data.result.10",
+        "type": "string"
+      },
+      {
+        "name": "data.result.11",
+        "type": "string"
+      },
+      {
+        "name": "data.result.12",
+        "type": "string"
+      },
+      {
+        "name": "data.result.13",
+        "type": "string"
+      },
+      {
+        "name": "data.result.14",
+        "type": "string"
+      },
+      {
+        "name": "data.result.15",
+        "type": "string"
+      },
+      {
+        "name": "data.result.16",
+        "type": "string"
+      },
+      {
+        "name": "data.result.17",
+        "type": "string"
+      },
+      {
+        "name": "data.result.18",
+        "type": "string"
+      },
+      {
+        "name": "data.result.19",
+        "type": "string"
+      },
+      {
+        "name": "data.result.20",
+        "type": "string"
+      },
+      {
+        "name": "data.result.21",
+        "type": "string"
+      },
+      {
+        "name": "data.result.22",
+        "type": "string"
+      },
+      {
+        "name": "data.result.23",
+        "type": "string"
+      },
+      {
+        "name": "data.result.24",
+        "type": "string"
+      },
+      {
+        "name": "data.result.25",
+        "type": "string"
+      },
+      {
+        "name": "data.result.26",
+        "type": "string"
+      },
+      {
+        "name": "data.result.27",
+        "type": "string"
+      },
+      {
+        "name": "data.result.28",
+        "type": "string"
+      },
+      {
+        "name": "data.result.29",
         "type": "string"
       }
     ],
