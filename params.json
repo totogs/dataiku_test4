@@ -122,6 +122,7 @@
   },
   "name": "Logs analysis",
   "projectStatus": "Sandbox",
+  "imgPattern": 6,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -176,6 +177,13 @@
       "checks": []
     }
   },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "alexis"
+    },
+    "lastModifiedOn": 1628855267147
+  },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
@@ -187,41 +195,6 @@
   "tags": [],
   "customFields": {},
   "checklists": {
-    "checklists": [
-      {
-        "title": "Your new project\u0027s Todo",
-        "createdOn": 0,
-        "items": [
-          {
-            "done": true,
-            "text": "Create the project",
-            "createdOn": 1628850172466,
-            "createdBy": "admin",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Set a project image (click on the color next to the project title)",
-            "createdOn": 1628850172466,
-            "createdBy": "admin",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Import your [first dataset](projects/LOGSANALYSIS/datasets/new/)",
-            "createdOn": 1628850172466,
-            "createdBy": "admin",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Organize your work by replacing this with a real todo",
-            "createdOn": 1628850172466,
-            "createdBy": "admin",
-            "stateChangedOn": 0
-          }
-        ]
-      }
-    ]
+    "checklists": []
   }
 }
