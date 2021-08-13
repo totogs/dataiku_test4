@@ -2,6 +2,7 @@
 import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
+import json
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Read recipe inputs
@@ -52,29 +53,28 @@ df29 = df[["data.result.29_metric","data.result.29_values"]]
 df0.head()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-dict = df0["data.result.0_metric"]
-
-for key, value in dict.items():
-
-    print(key, '->', dict[key])
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-dict = df0["data.result.0_metric"]
-
-for key in dict:
-
-    print(key)
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-broker
 for key, value in df0["data.result.0_metric"].items():
-    if key == "hostname":
-        print(value)
-    else :
-        print("non chackal")
+    
+    # The value is understand as a string so we have to cast it as an dict
+    
+    print(type(value))
+    dict = json.loads(value)
+    print(type(dict))
+    print(dict.keys())
+    
+        
+
+        
+df0['Broker'] = dict.get("hostname")
+df0['Disk'] = dict.get("mountpoint")
+df0['Dc'] = dict.get("dc")
+df0 = df0.drop(['data.result.0_metric'], axis=1)
+
+df0.head()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-df0["data.result.0.metric"].items()
+df_val = pd.DataFrame(data = df0["data.result.0_values"], index=["row1", "row2"], columns=["Timestamp", "Using_percent"])
+df_val.head()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
