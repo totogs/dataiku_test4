@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "rayan"
     },
-    "lastModifiedOn": 1628856894293
+    "lastModifiedOn": 1628857257266
   },
   "creationTag": {
     "versionNumber": 0,
@@ -90,14 +90,6 @@
   "schema": {
     "columns": [
       {
-        "name": "status",
-        "type": "string"
-      },
-      {
-        "name": "data.resultType",
-        "type": "string"
-      },
-      {
         "name": "data.result.0.metric",
         "type": "map",
         "mapKeys": {
@@ -106,10 +98,6 @@
         "mapValues": {
           "type": "string"
         }
-      },
-      {
-        "name": "data.result.0.values_TRUNCATED",
-        "type": "string"
       },
       {
         "name": "data.result.0.values",
@@ -129,10 +117,6 @@
         }
       },
       {
-        "name": "data.result.1.values_TRUNCATED",
-        "type": "string"
-      },
-      {
         "name": "data.result.1.values",
         "type": "array",
         "arrayContent": {
@@ -148,10 +132,6 @@
         "mapValues": {
           "type": "string"
         }
-      },
-      {
-        "name": "data.result.2.values_TRUNCATED",
-        "type": "string"
       },
       {
         "name": "data.result.2.values",
@@ -171,10 +151,6 @@
         }
       },
       {
-        "name": "data.result.3.values_TRUNCATED",
-        "type": "string"
-      },
-      {
         "name": "data.result.3.values",
         "type": "array",
         "arrayContent": {
@@ -190,10 +166,6 @@
         "mapValues": {
           "type": "string"
         }
-      },
-      {
-        "name": "data.result.4.values_TRUNCATED",
-        "type": "string"
       },
       {
         "name": "data.result.4.values",
@@ -213,10 +185,6 @@
         }
       },
       {
-        "name": "data.result.5.values_TRUNCATED",
-        "type": "string"
-      },
-      {
         "name": "data.result.5.values",
         "type": "array",
         "arrayContent": {
@@ -232,10 +200,6 @@
         "mapValues": {
           "type": "string"
         }
-      },
-      {
-        "name": "data.result.6.values_TRUNCATED",
-        "type": "string"
       },
       {
         "name": "data.result.6.values",
@@ -255,10 +219,6 @@
         }
       },
       {
-        "name": "data.result.7.values_TRUNCATED",
-        "type": "string"
-      },
-      {
         "name": "data.result.7.values",
         "type": "array",
         "arrayContent": {
@@ -274,10 +234,6 @@
         "mapValues": {
           "type": "string"
         }
-      },
-      {
-        "name": "data.result.8.values_TRUNCATED",
-        "type": "string"
       },
       {
         "name": "data.result.8.values",
@@ -297,10 +253,6 @@
         }
       },
       {
-        "name": "data.result.9.values_TRUNCATED",
-        "type": "string"
-      },
-      {
         "name": "data.result.9.values",
         "type": "array",
         "arrayContent": {
@@ -316,10 +268,6 @@
         "mapValues": {
           "type": "string"
         }
-      },
-      {
-        "name": "data.result.10.values_TRUNCATED",
-        "type": "string"
       },
       {
         "name": "data.result.10.values",
@@ -339,10 +287,6 @@
         }
       },
       {
-        "name": "data.result.11.values_TRUNCATED",
-        "type": "string"
-      },
-      {
         "name": "data.result.11.values",
         "type": "array",
         "arrayContent": {
@@ -358,10 +302,6 @@
         "mapValues": {
           "type": "string"
         }
-      },
-      {
-        "name": "data.result.12.values_TRUNCATED",
-        "type": "string"
       },
       {
         "name": "data.result.12.values",
@@ -381,10 +321,6 @@
         }
       },
       {
-        "name": "data.result.13.values_TRUNCATED",
-        "type": "string"
-      },
-      {
         "name": "data.result.13.values",
         "type": "array",
         "arrayContent": {
@@ -400,10 +336,6 @@
         "mapValues": {
           "type": "string"
         }
-      },
-      {
-        "name": "data.result.14.values_TRUNCATED",
-        "type": "string"
       },
       {
         "name": "data.result.14.values",
@@ -423,10 +355,6 @@
         }
       },
       {
-        "name": "data.result.15.values_TRUNCATED",
-        "type": "string"
-      },
-      {
         "name": "data.result.15.values",
         "type": "array",
         "arrayContent": {
@@ -442,10 +370,6 @@
         "mapValues": {
           "type": "string"
         }
-      },
-      {
-        "name": "data.result.16.values_TRUNCATED",
-        "type": "string"
       },
       {
         "name": "data.result.16.values",
@@ -465,10 +389,6 @@
         }
       },
       {
-        "name": "data.result.17.values_TRUNCATED",
-        "type": "string"
-      },
-      {
         "name": "data.result.17.values",
         "type": "array",
         "arrayContent": {
@@ -484,10 +404,6 @@
         "mapValues": {
           "type": "string"
         }
-      },
-      {
-        "name": "data.result.18.values_TRUNCATED",
-        "type": "string"
       },
       {
         "name": "data.result.18.values",
@@ -507,10 +423,6 @@
         }
       },
       {
-        "name": "data.result.19.values_TRUNCATED",
-        "type": "string"
-      },
-      {
         "name": "data.result.19.values",
         "type": "array",
         "arrayContent": {
@@ -526,10 +438,6 @@
         "mapValues": {
           "type": "string"
         }
-      },
-      {
-        "name": "data.result.20.values_TRUNCATED",
-        "type": "string"
       },
       {
         "name": "data.result.20.values",
@@ -549,10 +457,6 @@
         }
       },
       {
-        "name": "data.result.21.values_TRUNCATED",
-        "type": "string"
-      },
-      {
         "name": "data.result.21.values",
         "type": "array",
         "arrayContent": {
@@ -568,10 +472,6 @@
         "mapValues": {
           "type": "string"
         }
-      },
-      {
-        "name": "data.result.22.values_TRUNCATED",
-        "type": "string"
       },
       {
         "name": "data.result.22.values",
@@ -591,10 +491,6 @@
         }
       },
       {
-        "name": "data.result.23.values_TRUNCATED",
-        "type": "string"
-      },
-      {
         "name": "data.result.23.values",
         "type": "array",
         "arrayContent": {
@@ -610,10 +506,6 @@
         "mapValues": {
           "type": "string"
         }
-      },
-      {
-        "name": "data.result.24.values_TRUNCATED",
-        "type": "string"
       },
       {
         "name": "data.result.24.values",
@@ -633,10 +525,6 @@
         }
       },
       {
-        "name": "data.result.25.values_TRUNCATED",
-        "type": "string"
-      },
-      {
         "name": "data.result.25.values",
         "type": "array",
         "arrayContent": {
@@ -652,10 +540,6 @@
         "mapValues": {
           "type": "string"
         }
-      },
-      {
-        "name": "data.result.26.values_TRUNCATED",
-        "type": "string"
       },
       {
         "name": "data.result.26.values",
@@ -675,10 +559,6 @@
         }
       },
       {
-        "name": "data.result.27.values_TRUNCATED",
-        "type": "string"
-      },
-      {
         "name": "data.result.27.values",
         "type": "array",
         "arrayContent": {
@@ -696,10 +576,6 @@
         }
       },
       {
-        "name": "data.result.28.values_TRUNCATED",
-        "type": "string"
-      },
-      {
         "name": "data.result.28.values",
         "type": "array",
         "arrayContent": {
@@ -715,10 +591,6 @@
         "mapValues": {
           "type": "string"
         }
-      },
-      {
-        "name": "data.result.29.values_TRUNCATED",
-        "type": "string"
       },
       {
         "name": "data.result.29.values",
