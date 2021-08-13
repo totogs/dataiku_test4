@@ -1,0 +1,112 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {
+      "data.result.0_metric": 772,
+      "data.result.0_values": 300,
+      "data.result.1_metric": 300,
+      "data.result.1_values": 300,
+      "data.result.2_metric": 300,
+      "data.result.2_values": 300,
+      "data.result.3_metric": 300,
+      "data.result.3_values": 300,
+      "data.result.4_metric": 300,
+      "data.result.4_values": 300,
+      "data.result.5_metric": 300,
+      "data.result.5_values": 300,
+      "data.result.6_metric": 300,
+      "data.result.6_values": 300,
+      "data.result.7_metric": 300,
+      "data.result.7_values": 300,
+      "data.result.8_metric": 300,
+      "data.result.8_values": 300,
+      "data.result.9_metric": 300,
+      "data.result.9_values": 300,
+      "data.result.10_metric": 300,
+      "data.result.10_values": 300,
+      "data.result.11_metric": 300,
+      "data.result.11_values": 300,
+      "data.result.12_metric": 300,
+      "data.result.12_values": 300,
+      "data.result.13_metric": 300,
+      "data.result.13_values": 300,
+      "data.result.14_metric": 300,
+      "data.result.14_values": 300,
+      "data.result.15_metric": 300,
+      "data.result.15_values": 300,
+      "data.result.16_metric": 300,
+      "data.result.16_values": 300,
+      "data.result.17_metric": 300,
+      "data.result.17_values": 300,
+      "data.result.18_metric": 300,
+      "data.result.18_values": 300,
+      "data.result.19_metric": 300,
+      "data.result.19_values": 300,
+      "data.result.20_metric": 300,
+      "data.result.20_values": 300,
+      "data.result.21_metric": 300,
+      "data.result.21_values": 300,
+      "data.result.22_metric": 300,
+      "data.result.22_values": 300,
+      "data.result.23_metric": 300,
+      "data.result.23_values": 300,
+      "data.result.24_metric": 300,
+      "data.result.24_values": 300,
+      "data.result.25_metric": 300,
+      "data.result.25_values": 300,
+      "data.result.26_metric": 300,
+      "data.result.26_values": 300,
+      "data.result.27_metric": 300,
+      "data.result.27_values": 300,
+      "data.result.28_metric": 300,
+      "data.result.28_values": 300,
+      "data.result.29_metric": 300,
+      "data.result.29_values": 300
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": []
+}
