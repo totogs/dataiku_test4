@@ -53,9 +53,6 @@ df29 = df[["data.result.29_metric","data.result.29_values"]]
 df0.head()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-df0.info()
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 for key, value in df0["data.result.0_metric"].items():
     
     # The value is understand as a string so we have to cast it as an dict
@@ -76,22 +73,23 @@ df0 = df0.drop(['data.result.0_metric'], axis=1)
 df0.head()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+values = df0["data.result.0_values"]
+print(type(values))
+print(values.shape)
+print(values)
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+values = values.to_string()
+type(values)
+print (values)
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+values = values.rstrip(values[10])
+values
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 df_val = pd.DataFrame(np.array(df0["data.result.0_values"]), columns=["Timestamp"])
 df_val.head()
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-df_val["Timestamp"].to_numpy()
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-ar = np.array(df0["data.result.0_values"])
-ar.shape
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-df_val = pd.DataFrame(np.array(df0["data.result.0_values"]), columns=["Timestamp"])
-df_val.head()
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-! install --upgrade pandas
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
