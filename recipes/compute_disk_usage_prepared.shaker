@@ -26,8 +26,87 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "JSONFlattener",
+      "params": {
+        "maxDepth": 10,
+        "inCol": "data",
+        "nullAsEmpty": true,
+        "prefixOutputs": true,
+        "flattenArrays": false,
+        "separator": "_"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "data_resultType",
+          "status",
+          "data"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ArrayFold",
+      "params": {
+        "column": "data_result"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "JSONFlattener",
+      "params": {
+        "maxDepth": 10,
+        "inCol": "data_result",
+        "nullAsEmpty": true,
+        "prefixOutputs": true,
+        "flattenArrays": false,
+        "separator": "_"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "data_result_metric_dc",
+          "data_result_metric_fstype",
+          "data_result_metric_device",
+          "data_result_metric_job",
+          "data_result_metric_cluster",
+          "data_result"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -39,7 +118,20 @@
       "meaning": "Text"
     }
   },
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "data_result_metric_hostname": 218,
+    "data_result_metric_fstype": 203,
+    "data": 300,
+    "data_result_metric_device": 203,
+    "data_result_metric_mountpoint": 233,
+    "data_result_values": 300,
+    "data_result_metric_job": 180,
+    "data_result": 300,
+    "data_resultType": 155,
+    "data_result_metric_cluster": 210,
+    "status": 100,
+    "data_result_metric_dc": 173
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
