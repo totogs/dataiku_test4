@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "rayan"
     },
-    "lastModifiedOn": 1629123671723
+    "lastModifiedOn": 1629123780468
   },
   "creationTag": {
     "versionNumber": 0,
@@ -103,14 +103,14 @@
       },
       {
         "name": "Timestamp",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "CPU_Usage",
         "type": "string"
       }
     ],
-    "userModified": false
+    "userModified": true
   },
   "dkuProperties": [],
   "metrics": {
