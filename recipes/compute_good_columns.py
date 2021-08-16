@@ -53,6 +53,9 @@ df29 = df[["data.result.29_metric","data.result.29_values"]]
 df0.head()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+df.info()
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 for key, value in df0["data.result.0_metric"].items():
     
     # The value is understand as a string so we have to cast it as an dict
@@ -67,13 +70,20 @@ for key, value in df0["data.result.0_metric"].items():
         
 df0['Broker'] = dict.get("hostname")
 df0['Disk'] = dict.get("mountpoint")
-df0['Dc'] = dict.get("dc")
+df0['Data_Center'] = dict.get("dc")
 df0 = df0.drop(['data.result.0_metric'], axis=1)
 
 df0.head()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 df_val = pd.DataFrame(data = df0["data.result.0_values"], index=["row1", "row2"], columns=["Timestamp", "Using_percent"])
+df_val.head()
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+df0.info()
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+df_val = pd.DataFrame(array)
 df_val.head()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
