@@ -1,3 +1,4 @@
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # -*- coding: utf-8 -*-
 import dataiku
 import pandas as pd, numpy as np
@@ -5,16 +6,16 @@ from dataiku import pandasutils as pdu
 
 # Read recipe inputs
 good_columns_prepared = dataiku.Dataset("good_columns_prepared")
-good_columns_prepared_df = good_columns_prepared.get_dataframe()
+df = good_columns_prepared.get_dataframe()
+df.head(5)
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+df["data.result.0_values"] = list(df["data.result.0_values"])
 
-# Compute recipe outputs from inputs
-# TODO: Replace this part by your actual code that computes the output, as a Pandas dataframe
-# NB: DSS also supports other kinds of APIs for reading and writing data. Please see doc.
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+df["data.result.0_values"][0]
 
-test_df = good_columns_prepared_df # For this sample code, simply copy input to output
-
-
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
 test = dataiku.Dataset("test")
-test.write_with_schema(test_df)
+test.write_with_schema(df)
