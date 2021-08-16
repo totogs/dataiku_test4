@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "rayan"
     },
-    "lastModifiedOn": 1629120329406
+    "lastModifiedOn": 1629122166569
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,8 +88,41 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "values",
+        "type": "string"
+      },
+      {
+        "name": "metric.cluster",
+        "type": "string"
+      },
+      {
+        "name": "metric.hostname",
+        "type": "string"
+      },
+      {
+        "name": "metric.job",
+        "type": "string"
+      },
+      {
+        "name": "metric.device",
+        "type": "string"
+      },
+      {
+        "name": "metric.fstype",
+        "type": "string"
+      },
+      {
+        "name": "metric.dc",
+        "type": "string"
+      },
+      {
+        "name": "metric.mountpoint",
+        "type": "string"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
