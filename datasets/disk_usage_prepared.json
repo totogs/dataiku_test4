@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629123276994
+    "lastModifiedOn": 1629123681894
   },
   "creationTag": {
     "versionNumber": 0,
@@ -90,13 +90,19 @@
   "schema": {
     "columns": [
       {
-        "name": "status",
+        "name": "data_result_metric_hostname",
         "type": "string"
       },
       {
-        "name": "data",
-        "type": "string",
-        "meaning": "Text"
+        "name": "data_result_metric_mountpoint",
+        "type": "string"
+      },
+      {
+        "name": "data_result_values",
+        "type": "array",
+        "arrayContent": {
+          "type": "string"
+        }
       }
     ],
     "userModified": true
