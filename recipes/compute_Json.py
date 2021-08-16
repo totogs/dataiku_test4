@@ -1,20 +1,38 @@
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # -*- coding: utf-8 -*-
 import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
+import json
 
 # Read recipe inputs
 disk_usage = dataiku.Dataset("disk_usage")
-disk_usage_df = disk_usage.get_dataframe()
+df = disk_usage.get_dataframe()
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+df.info()
 
-# Compute recipe outputs from inputs
-# TODO: Replace this part by your actual code that computes the output, as a Pandas dataframe
-# NB: DSS also supports other kinds of APIs for reading and writing data. Please see doc.
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+df
 
-json_df = disk_usage_df # For this sample code, simply copy input to output
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+for key, value in df["data"].items():
+    print(value)
+    dict = json.loads(value)
+dict
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+df = pd.json_normalize(dict["result"])
+df = df.explode('values')
+df[['Timestamp','CPU_Usage']] = pd.DataFrame(df['values'].tolist(),index=df.index)
+df
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+df.rename(columns={'metric.hostname': 'Broker', 'metric.dc': 'Data_Center','metric.mountpoint':'Disk'}, inplace=True)
+df = df.drop(['metric.cluster', 'metric.job','metric.device','metric.fstype','values'], axis=1)
+df
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
 json = dataiku.Dataset("Json")
-json.write_with_schema(json_df)
+json.write_with_schema(df)
