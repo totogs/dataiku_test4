@@ -1,20 +1,21 @@
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # -*- coding: utf-8 -*-
 import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Read recipe inputs
 disk_usage = dataiku.Dataset("disk_usage")
-disk_usage_df = disk_usage.get_dataframe()
+df = disk_usage.get_dataframe()
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+df.info()
 
-# Compute recipe outputs from inputs
-# TODO: Replace this part by your actual code that computes the output, as a Pandas dataframe
-# NB: DSS also supports other kinds of APIs for reading and writing data. Please see doc.
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+json = json.loads(df)
 
-json_df = disk_usage_df # For this sample code, simply copy input to output
-
-
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
 json = dataiku.Dataset("Json")
-json.write_with_schema(json_df)
+json.write_with_schema(df)
