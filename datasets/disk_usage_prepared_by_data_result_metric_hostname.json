@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629123781962
+    "lastModifiedOn": 1629123819270
   },
   "creationTag": {
     "versionNumber": 0,
@@ -89,13 +89,6 @@
   },
   "schema": {
     "columns": [
-      {
-        "name": "data_result_values",
-        "type": "array",
-        "arrayContent": {
-          "type": "string"
-        }
-      },
       {
         "name": "broker-101_/data_count",
         "type": "bigint"
@@ -177,7 +170,7 @@
         "type": "bigint"
       }
     ],
-    "userModified": false,
+    "userModified": true,
     "metadata": {
       "engineType": "DSS",
       "pivotElementsModalities": [
