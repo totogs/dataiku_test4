@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "rayan"
     },
-    "lastModifiedOn": 1629123807411
+    "lastModifiedOn": 1629124099426
   },
   "creationTag": {
     "versionNumber": 0,
@@ -103,7 +103,7 @@
       },
       {
         "name": "Timestamp",
-        "type": "date"
+        "type": "int"
       },
       {
         "name": "CPU_Usage",
