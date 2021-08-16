@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "rayan"
     },
-    "lastModifiedOn": 1629119307489
+    "lastModifiedOn": 1629119357830
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,8 +88,25 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "data.result.0_values",
+        "type": "string"
+      },
+      {
+        "name": "Broker",
+        "type": "string"
+      },
+      {
+        "name": "Disk",
+        "type": "string"
+      },
+      {
+        "name": "Data_Center",
+        "type": "string"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
