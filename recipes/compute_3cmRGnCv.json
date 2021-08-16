@@ -3,7 +3,103 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "frequency_unit": "min",
+      "frequency_end_of_week": "SUN",
+      "frequency_step_hours": 1,
+      "frequency_step_minutes": 15,
+      "additional_columns": false,
+      "sampling_method": "last_records",
+      "number_records": 10000,
+      "prediction_length": 4,
+      "forecasting_style": "auto",
+      "season_length_min": 1,
+      "season_length_H": 24,
+      "season_length_D": 7,
+      "season_length_B": 5,
+      "season_length_W": 52,
+      "season_length_M": 12,
+      "season_length_3M": 4,
+      "season_length_6M": 2,
+      "season_length_12M": 1,
+      "trivial_identity_model_activated": true,
+      "seasonal_naive_model_activated": true,
+      "autoarima_model_activated": false,
+      "autoarima_model_kwargs": {
+        "seasonal": "True"
+      },
+      "seasonal_trend_model_activated": false,
+      "seasonal_trend_model_kwargs": {
+        "model": "ETSModel"
+      },
+      "npts_model_activated": false,
+      "npts_model_kwargs": {
+        "use_seasonal_model": "True"
+      },
+      "simplefeedforward_model_activated": true,
+      "simplefeedforward_model_kwargs": {
+        "num_hidden_dimensions": "[40, 40]"
+      },
+      "deepar_model_activated": true,
+      "deepar_model_kwargs": {
+        "num_layers": 2
+      },
+      "transformer_model_activated": false,
+      "transformer_model_kwargs": {
+        "model_dim": 32
+      },
+      "mqcnn_model_activated": false,
+      "mqcnn_model_kwargs": {},
+      "tft_model_activated": false,
+      "tft_model_kwargs": {},
+      "nbeats_model_activated": false,
+      "nbeats_model_kwargs": {},
+      "epoch": 10,
+      "batch_size": 32,
+      "auto_num_batches_per_epoch": false,
+      "num_batches_per_epoch": 50,
+      "evaluation_strategy": "split",
+      "external_feature_activated": false,
+      "evaluation_only": false,
+      "use_gpu": false,
+      "gpu_location": "local_gpu",
+      "target_columns": [
+        "broker-101/",
+        "broker-102/",
+        "broker-103/",
+        "broker-101/data",
+        "broker-102/data",
+        "broker-103/data",
+        "broker-104/",
+        "broker-104/data",
+        "broker-105/",
+        "broker-105/data",
+        "broker-106/",
+        "broker-106/data",
+        "broker-107/",
+        "broker-108/",
+        "broker-107/data",
+        "broker-108/data",
+        "broker-109/",
+        "broker-109/data",
+        "broker-110/",
+        "broker-110/data",
+        "zook-101/data",
+        "zook-101/",
+        "zook-102/",
+        "zook-103/",
+        "zook-104/data",
+        "zook-103/data",
+        "zook-102/data",
+        "zook-104/",
+        "zook-105/",
+        "zook-105/data"
+      ],
+      "timeseries_identifiers": [],
+      "external_feature_columns": [],
+      "gpu_devices": [],
+      "time_column": "date"
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -53,11 +149,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629130232983
+    "lastModifiedOn": 1629130356785
   },
   "creationTag": {
     "versionNumber": 0,
