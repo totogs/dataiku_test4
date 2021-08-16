@@ -26,8 +26,26 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ArrayUnfold",
+      "params": {
+        "countVal": true,
+        "overflowAction": "ERROR",
+        "prefix": "data.result.0_values_",
+        "column": "data.result.0_values",
+        "limit": 100
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -35,7 +53,12 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Broker": 100,
+    "Data_Center": 127,
+    "data.result.0_values": 260,
+    "Disk": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
