@@ -41,9 +41,7 @@
       }
     }
   },
-  "explicitIdentifiers": [
-    "data_result_values"
-  ],
+  "explicitIdentifiers": [],
   "otherColumns": [],
   "pivots": [
     {
