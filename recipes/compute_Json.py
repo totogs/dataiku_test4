@@ -29,8 +29,21 @@ df
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 df.rename(columns={'metric.hostname': 'Broker', 'metric.dc': 'Data_Center','metric.mountpoint':'Disk'}, inplace=True)
-df = df.drop(['metric.cluster', 'metric.job','metric.device','metric.fstype','values'], axis=1)
+df['Broker_Disk'] = df['Broker'] + df['Disk']
+df = df.drop(['metric.cluster', 'metric.job','metric.device','metric.fstype','values','Broker','Disk'], axis=1)
 df
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+list(df['Broker_Disk'].unique())
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+dfx = pd.pivot_table ( df, index=['Timestamp'], columns = df.groupby(['Timestamp']).cumcount().add(1), values = ['CPU_Usage'], aggfunc = 'sum')
+dfx.columns = list(df['Broker_Disk'].unique())
+dfx = dfx.reset_index()
+dfx
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+df = dfx
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
