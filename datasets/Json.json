@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "rayan"
     },
-    "lastModifiedOn": 1629124340349
+    "lastModifiedOn": 1629127398003
   },
   "creationTag": {
     "versionNumber": 0,
@@ -90,15 +90,7 @@
   "schema": {
     "columns": [
       {
-        "name": "Broker",
-        "type": "string"
-      },
-      {
         "name": "Data_Center",
-        "type": "string"
-      },
-      {
-        "name": "Disk",
         "type": "string"
       },
       {
@@ -107,6 +99,10 @@
       },
       {
         "name": "CPU_Usage",
+        "type": "string"
+      },
+      {
+        "name": "Broker_Disk",
         "type": "string"
       }
     ],
