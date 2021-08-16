@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "rayan"
     },
-    "lastModifiedOn": 1629122166569
+    "lastModifiedOn": 1629123671723
   },
   "creationTag": {
     "versionNumber": 0,
@@ -90,35 +90,23 @@
   "schema": {
     "columns": [
       {
-        "name": "values",
+        "name": "Broker",
         "type": "string"
       },
       {
-        "name": "metric.cluster",
+        "name": "Data_Center",
         "type": "string"
       },
       {
-        "name": "metric.hostname",
+        "name": "Disk",
         "type": "string"
       },
       {
-        "name": "metric.job",
+        "name": "Timestamp",
         "type": "string"
       },
       {
-        "name": "metric.device",
-        "type": "string"
-      },
-      {
-        "name": "metric.fstype",
-        "type": "string"
-      },
-      {
-        "name": "metric.dc",
-        "type": "string"
-      },
-      {
-        "name": "metric.mountpoint",
+        "name": "CPU_Usage",
         "type": "string"
       }
     ],
