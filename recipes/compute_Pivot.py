@@ -1,3 +1,4 @@
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # -*- coding: utf-8 -*-
 import dataiku
 import pandas as pd, numpy as np
@@ -5,16 +6,13 @@ from dataiku import pandasutils as pdu
 
 # Read recipe inputs
 json = dataiku.Dataset("Json")
-json_df = json.get_dataframe()
+df = json.get_dataframe()
+df.head(10)
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+df=pd.pivot_table(df,index=['shopCode','Product'],columns=df.groupby(['shopCode','Product']).cumcount().add(1),values=['Code','Score'],aggfunc='sum')
 
-# Compute recipe outputs from inputs
-# TODO: Replace this part by your actual code that computes the output, as a Pandas dataframe
-# NB: DSS also supports other kinds of APIs for reading and writing data. Please see doc.
-
-pivot_df = json_df # For this sample code, simply copy input to output
-
-
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
 pivot = dataiku.Dataset("Pivot")
-pivot.write_with_schema(pivot_df)
+pivot.write_with_schema(df)
