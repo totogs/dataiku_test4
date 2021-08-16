@@ -53,7 +53,7 @@ df29 = df[["data.result.29_metric","data.result.29_values"]]
 df0.head()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-df.info()
+df0.info()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 for key, value in df0["data.result.0_metric"].items():
@@ -76,15 +76,22 @@ df0 = df0.drop(['data.result.0_metric'], axis=1)
 df0.head()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-df_val = pd.DataFrame(data = df0["data.result.0_values"], index=["row1", "row2"], columns=["Timestamp", "Using_percent"])
+df_val = pd.DataFrame(np.array(df0["data.result.0_values"]), columns=["Timestamp"])
 df_val.head()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-df0.info()
+df_val["Timestamp"].to_numpy()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-df_val = pd.DataFrame(array)
+ar = np.array(df0["data.result.0_values"])
+ar.shape
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+df_val = pd.DataFrame(np.array(df0["data.result.0_values"]), columns=["Timestamp"])
 df_val.head()
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+! install --upgrade pandas
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
