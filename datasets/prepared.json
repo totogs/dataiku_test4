@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "rayan"
     },
-    "lastModifiedOn": 1628860930335
+    "lastModifiedOn": 1629115866532
   },
   "creationTag": {
     "versionNumber": 0,
@@ -102,6 +102,7 @@
       {
         "name": "data.result.0_values",
         "type": "array",
+        "meaning": "JSONArrayMeaning",
         "arrayContent": {
           "type": "string"
         }
