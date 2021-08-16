@@ -79,13 +79,7 @@ print(values.shape)
 print(values)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-values = values.to_string()
-type(values)
-print (values)
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-values = values.rstrip(values[10])
-values
+values = json.loads(values)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 df_val = pd.DataFrame(np.array(df0["data.result.0_values"]), columns=["Timestamp"])
