@@ -4,7 +4,8 @@
   "optionalDependencies": false,
   "params": {
     "envSelection": {
-      "envMode": "INHERIT"
+      "envMode": "EXPLICIT_ENV",
+      "envName": "pre-pross"
     },
     "containerSelection": {
       "containerMode": "INHERIT"
@@ -40,11 +41,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "rayan"
     },
-    "lastModifiedOn": 1629123677573
+    "lastModifiedOn": 1629124312668
   },
   "creationTag": {
     "versionNumber": 0,
