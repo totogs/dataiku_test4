@@ -10,9 +10,6 @@ df = json.get_dataframe()
 df.head(10)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-df=pd.pivot_table(df,index=['shopCode','Product'],columns=df.groupby(['shopCode','Product']).cumcount().add(1),values=['Code','Score'],aggfunc='sum')
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
 pivot = dataiku.Dataset("Pivot")
 pivot.write_with_schema(df)
