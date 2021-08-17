@@ -23,7 +23,38 @@
       "seasonal_stl": 7,
       "robust_stl": false,
       "additional_parameters_STL": {},
-      "target_columns": [],
+      "target_columns": [
+        "broker-101/",
+        "broker-101/data",
+        "broker-102/",
+        "broker-102/data",
+        "broker-103/",
+        "broker-103/data",
+        "broker-104/",
+        "broker-104/data",
+        "broker-105/",
+        "broker-105/data",
+        "broker-106/",
+        "broker-106/data",
+        "broker-107/",
+        "broker-107/data",
+        "broker-108/",
+        "broker-108/data",
+        "broker-109/",
+        "broker-109/data",
+        "broker-110/",
+        "broker-110/data",
+        "zook-101/",
+        "zook-101/data",
+        "zook-102/",
+        "zook-102/data",
+        "zook-103/data",
+        "zook-103/",
+        "zook-104/",
+        "zook-104/data",
+        "zook-105/",
+        "zook-105/data"
+      ],
       "timeseries_identifiers": [],
       "time_column": "date"
     },
@@ -60,11 +91,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629208218233
+    "lastModifiedOn": 1629208296873
   },
   "creationTag": {
     "versionNumber": 0,
