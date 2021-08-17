@@ -32,7 +32,7 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "UNIXTimestampParser",
@@ -40,6 +40,34 @@
         "inCol": "Timestamp",
         "milliseconds": false,
         "outCol": "date"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "zook-103/data"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "0.0"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "zook-105/data"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "0.0"
       },
       "alwaysShowComment": false
     }
