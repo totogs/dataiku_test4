@@ -3,7 +3,30 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "frequency_unit": "min",
+      "frequency_end_of_week": "SUN",
+      "frequency_step_hours": 1,
+      "frequency_step_minutes": 15,
+      "season_length_min": 60,
+      "season_length_H": 24,
+      "season_length_D": 7,
+      "season_length_B": 5,
+      "season_length_W": 52,
+      "season_length_M": 12,
+      "season_length_3M": 4,
+      "season_length_6M": 2,
+      "season_length_12M": 4,
+      "long_format": false,
+      "decomposition_model": "additive",
+      "expert": false,
+      "seasonal_stl": 7,
+      "robust_stl": false,
+      "additional_parameters_STL": {},
+      "target_columns": [],
+      "timeseries_identifiers": [],
+      "time_column": "date"
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -37,11 +60,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629208152672
+    "lastModifiedOn": 1629208218233
   },
   "creationTag": {
     "versionNumber": 0,
