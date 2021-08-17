@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629209297530
+    "lastModifiedOn": 1629209302073
   },
   "creationTag": {
     "versionNumber": 0,
@@ -91,491 +91,613 @@
     "columns": [
       {
         "name": "Timestamp",
-        "type": "bigint"
+        "type": "bigint",
+        "comment": ""
       },
       {
         "name": "date",
-        "type": "date"
+        "type": "date",
+        "comment": ""
       },
       {
         "name": "broker-102/",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "broker-104/",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "broker-106/",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "broker-108/",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "broker-110/",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "zook-102/",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "zook-104/",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "broker-102/data",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "broker-104/data",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "broker-106/data",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "broker-108/data",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "broker-110/data",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "zook-102/data",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "zook-104/data",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "broker-101/",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "broker-103/",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "broker-105/",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "broker-107/",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "broker-109/",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "zook-101/",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "zook-103/",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "zook-105/",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "broker-101/data",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "broker-103/data",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "broker-105/data",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "broker-107/data",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "broker-109/data",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "zook-101/data",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "zook-103/data",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "zook-105/data",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "broker-101/_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "broker-101/_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "broker-101/_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "broker-101/data_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "broker-101/data_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "broker-101/data_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "broker-102/_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "broker-102/_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "broker-102/_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "broker-102/data_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "broker-102/data_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "broker-102/data_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "broker-103/_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "broker-103/_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "broker-103/_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "broker-103/data_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "broker-103/data_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "broker-103/data_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "broker-104/_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "broker-104/_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "broker-104/_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "broker-104/data_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "broker-104/data_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "broker-104/data_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "broker-105/_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "broker-105/_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "broker-105/_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "broker-105/data_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "broker-105/data_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "broker-105/data_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "broker-106/_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "broker-106/_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "broker-106/_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "broker-106/data_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "broker-106/data_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "broker-106/data_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "broker-107/_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "broker-107/_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "broker-107/_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "broker-107/data_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "broker-107/data_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "broker-107/data_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "broker-108/_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "broker-108/_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "broker-108/_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "broker-108/data_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "broker-108/data_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "broker-108/data_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "broker-109/_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "broker-109/_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "broker-109/_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "broker-109/data_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "broker-109/data_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "broker-109/data_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "broker-110/_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "broker-110/_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "broker-110/_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "broker-110/data_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "broker-110/data_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "broker-110/data_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "zook-101/_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "zook-101/_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "zook-101/_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "zook-101/data_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "zook-101/data_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "zook-101/data_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "zook-102/_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "zook-102/_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "zook-102/_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "zook-102/data_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "zook-102/data_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "zook-102/data_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "zook-103/data_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "zook-103/data_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "zook-103/data_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "zook-103/_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "zook-103/_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "zook-103/_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "zook-104/_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "zook-104/_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "zook-104/_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "zook-104/data_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "zook-104/data_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "zook-104/data_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "zook-105/_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "zook-105/_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "zook-105/_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       },
       {
         "name": "zook-105/data_trend",
-        "type": "double"
+        "type": "double",
+        "comment": "Long term variations"
       },
       {
         "name": "zook-105/data_seasonal",
-        "type": "double"
+        "type": "double",
+        "comment": "Periodic changes"
       },
       {
         "name": "zook-105/data_residuals",
-        "type": "double"
+        "type": "double",
+        "comment": "Random influences"
       }
     ],
     "userModified": false
