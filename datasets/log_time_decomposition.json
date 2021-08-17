@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629208151102
+    "lastModifiedOn": 1629209297530
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,8 +88,497 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "Timestamp",
+        "type": "bigint"
+      },
+      {
+        "name": "date",
+        "type": "date"
+      },
+      {
+        "name": "broker-102/",
+        "type": "double"
+      },
+      {
+        "name": "broker-104/",
+        "type": "double"
+      },
+      {
+        "name": "broker-106/",
+        "type": "double"
+      },
+      {
+        "name": "broker-108/",
+        "type": "double"
+      },
+      {
+        "name": "broker-110/",
+        "type": "double"
+      },
+      {
+        "name": "zook-102/",
+        "type": "double"
+      },
+      {
+        "name": "zook-104/",
+        "type": "double"
+      },
+      {
+        "name": "broker-102/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-104/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-106/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-108/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-110/data",
+        "type": "double"
+      },
+      {
+        "name": "zook-102/data",
+        "type": "double"
+      },
+      {
+        "name": "zook-104/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-101/",
+        "type": "double"
+      },
+      {
+        "name": "broker-103/",
+        "type": "double"
+      },
+      {
+        "name": "broker-105/",
+        "type": "double"
+      },
+      {
+        "name": "broker-107/",
+        "type": "double"
+      },
+      {
+        "name": "broker-109/",
+        "type": "double"
+      },
+      {
+        "name": "zook-101/",
+        "type": "double"
+      },
+      {
+        "name": "zook-103/",
+        "type": "double"
+      },
+      {
+        "name": "zook-105/",
+        "type": "double"
+      },
+      {
+        "name": "broker-101/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-103/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-105/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-107/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-109/data",
+        "type": "double"
+      },
+      {
+        "name": "zook-101/data",
+        "type": "double"
+      },
+      {
+        "name": "zook-103/data",
+        "type": "double"
+      },
+      {
+        "name": "zook-105/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-101/_trend",
+        "type": "double"
+      },
+      {
+        "name": "broker-101/_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "broker-101/_residuals",
+        "type": "double"
+      },
+      {
+        "name": "broker-101/data_trend",
+        "type": "double"
+      },
+      {
+        "name": "broker-101/data_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "broker-101/data_residuals",
+        "type": "double"
+      },
+      {
+        "name": "broker-102/_trend",
+        "type": "double"
+      },
+      {
+        "name": "broker-102/_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "broker-102/_residuals",
+        "type": "double"
+      },
+      {
+        "name": "broker-102/data_trend",
+        "type": "double"
+      },
+      {
+        "name": "broker-102/data_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "broker-102/data_residuals",
+        "type": "double"
+      },
+      {
+        "name": "broker-103/_trend",
+        "type": "double"
+      },
+      {
+        "name": "broker-103/_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "broker-103/_residuals",
+        "type": "double"
+      },
+      {
+        "name": "broker-103/data_trend",
+        "type": "double"
+      },
+      {
+        "name": "broker-103/data_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "broker-103/data_residuals",
+        "type": "double"
+      },
+      {
+        "name": "broker-104/_trend",
+        "type": "double"
+      },
+      {
+        "name": "broker-104/_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "broker-104/_residuals",
+        "type": "double"
+      },
+      {
+        "name": "broker-104/data_trend",
+        "type": "double"
+      },
+      {
+        "name": "broker-104/data_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "broker-104/data_residuals",
+        "type": "double"
+      },
+      {
+        "name": "broker-105/_trend",
+        "type": "double"
+      },
+      {
+        "name": "broker-105/_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "broker-105/_residuals",
+        "type": "double"
+      },
+      {
+        "name": "broker-105/data_trend",
+        "type": "double"
+      },
+      {
+        "name": "broker-105/data_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "broker-105/data_residuals",
+        "type": "double"
+      },
+      {
+        "name": "broker-106/_trend",
+        "type": "double"
+      },
+      {
+        "name": "broker-106/_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "broker-106/_residuals",
+        "type": "double"
+      },
+      {
+        "name": "broker-106/data_trend",
+        "type": "double"
+      },
+      {
+        "name": "broker-106/data_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "broker-106/data_residuals",
+        "type": "double"
+      },
+      {
+        "name": "broker-107/_trend",
+        "type": "double"
+      },
+      {
+        "name": "broker-107/_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "broker-107/_residuals",
+        "type": "double"
+      },
+      {
+        "name": "broker-107/data_trend",
+        "type": "double"
+      },
+      {
+        "name": "broker-107/data_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "broker-107/data_residuals",
+        "type": "double"
+      },
+      {
+        "name": "broker-108/_trend",
+        "type": "double"
+      },
+      {
+        "name": "broker-108/_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "broker-108/_residuals",
+        "type": "double"
+      },
+      {
+        "name": "broker-108/data_trend",
+        "type": "double"
+      },
+      {
+        "name": "broker-108/data_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "broker-108/data_residuals",
+        "type": "double"
+      },
+      {
+        "name": "broker-109/_trend",
+        "type": "double"
+      },
+      {
+        "name": "broker-109/_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "broker-109/_residuals",
+        "type": "double"
+      },
+      {
+        "name": "broker-109/data_trend",
+        "type": "double"
+      },
+      {
+        "name": "broker-109/data_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "broker-109/data_residuals",
+        "type": "double"
+      },
+      {
+        "name": "broker-110/_trend",
+        "type": "double"
+      },
+      {
+        "name": "broker-110/_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "broker-110/_residuals",
+        "type": "double"
+      },
+      {
+        "name": "broker-110/data_trend",
+        "type": "double"
+      },
+      {
+        "name": "broker-110/data_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "broker-110/data_residuals",
+        "type": "double"
+      },
+      {
+        "name": "zook-101/_trend",
+        "type": "double"
+      },
+      {
+        "name": "zook-101/_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "zook-101/_residuals",
+        "type": "double"
+      },
+      {
+        "name": "zook-101/data_trend",
+        "type": "double"
+      },
+      {
+        "name": "zook-101/data_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "zook-101/data_residuals",
+        "type": "double"
+      },
+      {
+        "name": "zook-102/_trend",
+        "type": "double"
+      },
+      {
+        "name": "zook-102/_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "zook-102/_residuals",
+        "type": "double"
+      },
+      {
+        "name": "zook-102/data_trend",
+        "type": "double"
+      },
+      {
+        "name": "zook-102/data_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "zook-102/data_residuals",
+        "type": "double"
+      },
+      {
+        "name": "zook-103/data_trend",
+        "type": "double"
+      },
+      {
+        "name": "zook-103/data_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "zook-103/data_residuals",
+        "type": "double"
+      },
+      {
+        "name": "zook-103/_trend",
+        "type": "double"
+      },
+      {
+        "name": "zook-103/_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "zook-103/_residuals",
+        "type": "double"
+      },
+      {
+        "name": "zook-104/_trend",
+        "type": "double"
+      },
+      {
+        "name": "zook-104/_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "zook-104/_residuals",
+        "type": "double"
+      },
+      {
+        "name": "zook-104/data_trend",
+        "type": "double"
+      },
+      {
+        "name": "zook-104/data_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "zook-104/data_residuals",
+        "type": "double"
+      },
+      {
+        "name": "zook-105/_trend",
+        "type": "double"
+      },
+      {
+        "name": "zook-105/_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "zook-105/_residuals",
+        "type": "double"
+      },
+      {
+        "name": "zook-105/data_trend",
+        "type": "double"
+      },
+      {
+        "name": "zook-105/data_seasonal",
+        "type": "double"
+      },
+      {
+        "name": "zook-105/data_residuals",
+        "type": "double"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
