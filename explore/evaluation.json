@@ -52,7 +52,7 @@
       "def": {
         "type": "lines",
         "variant": "normal",
-        "name": "Avg. of broker-109/data by date",
+        "name": "Avg. of broker-105/ by date",
         "userEditedName": false,
         "genericDimension0": [
           {
@@ -78,23 +78,23 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of broker-109/data, descending"
+                "label": "Average of broker-105/, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of broker-109/data, ascending",
+                "label": "Average of broker-105/, ascending",
                 "sortAscending": true
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 1,
-                "label": "Average of autoarima_broker-109/data, descending"
+                "label": "Average of autoarima_broker-105/, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 1,
-                "label": "Average of autoarima_broker-109/data, ascending",
+                "label": "Average of autoarima_broker-105/, ascending",
                 "sortAscending": true
               }
             ],
@@ -110,7 +110,7 @@
         "animationDimension": [],
         "genericMeasures": [
           {
-            "column": "broker-109/data",
+            "column": "broker-105/",
             "function": "AVG",
             "type": "NUMERICAL",
             "displayed": true,
@@ -121,7 +121,7 @@
             "computeModeDim": 0
           },
           {
-            "column": "autoarima_broker-109/data",
+            "column": "autoarima_broker-105/",
             "function": "AVG",
             "type": "NUMERICAL",
             "displayed": true,
@@ -209,7 +209,7 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAXlJREFUaEPtkTFKxEAUhidaiYWljZsRb+ARLERJBtEmoAewsBCWlZngASQzKIKFhQdQSKPFJCgWHsEbiBNtLC3ESpAttpGNmV142Qf7tt03f77//wI2Zb9g3L5L3Xzu/Tz5Hvf9pN7VFg6Vva+02JwUGNR3RzYcpna/ysQVFBB0bmNhnparLoue+yBc2mtnxF4TVJgWJ1UWHzfd+f6/ePQw/3G68cVVcet0vDPsXSiLw8rEF1zaA2fEZV12Y2FfKKi7jrS9NyPOBvlc2sIZEf/3vRX1uPCi1z+H3bRXOM9nWZL81IFyVd44He2OOtyyLLdfTXTn+669woyxjrRbMwHrOi3WuCpKp+PoL+jAIFf2qX/nW8T3rtXCvlCQd1QYcl0M2WQYgwVIBjIMuS6GbDKMwQIkAxmGXBdDNhnGYAGSgQxDroshmwxjsADJQIYh18WQTYYxWIBkIMOQ62LIJsMYLEAykGHIdTFkk2EMFiAZyDDkuhiyp87wL8o3TynSbdcxAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAXhJREFUaEPtkz1Lw1AUhs9N7CAOij/AG7q5qgj6D8RW8IOiOAmik+ASr+DQycIVBBcFxVEXF0FTcBOcHHR0cNFGqIsfKEocmuZKh6wGAp4T6Ml6w33yPg8R0GaPaLO9wIOTig8u3eRuD4YaSe9l9TxVYUdVl2t6fD+ro/76rlSDpTo/9nVxvnWxVN6mrwsbMUS6FwNhEPj13am3LApJNThpiFTeJRg4MiK6ftITd/FvIN2zabCsheArmH3ZK3237nFWT3tqO5Mffete3o7s3OPW2H1enXQ/6NKnXPP6jQUqiJorXZZdMUbUwzA6fN4uvsbf4LjVOSPMqDFwJSwYbnSacsePVRECeiFslsEWIwBiBgDefV1Y/JfBSUIoz3kwpX0MNhfGsEzJ4MKU9jHYXBjDMiWDC1Pax2BzYQzLlAwuTGkfg82FMSxTMrgwpX0MNhfGsEzJ4MKU9jHYXBjDMiWDC1Pax2BzYQzLlAwuTGkfg82FMSxTMn4BMeVbKSieE7UAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
