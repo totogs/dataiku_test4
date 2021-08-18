@@ -354,7 +354,7 @@
       "def": {
         "type": "lines",
         "variant": "normal",
-        "name": "Avg. of broker-109/ by date",
+        "name": "Avg. of broker-101/data by date",
         "userEditedName": false,
         "genericDimension0": [
           {
@@ -380,55 +380,66 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of broker-109/, descending"
+                "label": "Average of broker-101/data, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
+                "label": "Average of broker-101/data, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
+                "label": "Average of broker-109/, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
                 "label": "Average of broker-109/, ascending",
                 "sortAscending": true
               },
               {
                 "type": "AGGREGATION",
-                "measureIdx": 1,
+                "measureIdx": 2,
                 "label": "Average of broker-107/, descending"
               },
               {
                 "type": "AGGREGATION",
-                "measureIdx": 1,
+                "measureIdx": 2,
                 "label": "Average of broker-107/, ascending",
                 "sortAscending": true
               },
               {
                 "type": "AGGREGATION",
-                "measureIdx": 2,
+                "measureIdx": 3,
                 "label": "Average of broker-101/, descending"
               },
               {
                 "type": "AGGREGATION",
-                "measureIdx": 2,
+                "measureIdx": 3,
                 "label": "Average of broker-101/, ascending",
                 "sortAscending": true
               },
               {
                 "type": "AGGREGATION",
-                "measureIdx": 3,
+                "measureIdx": 4,
                 "label": "Average of broker-110/, descending"
               },
               {
                 "type": "AGGREGATION",
-                "measureIdx": 3,
+                "measureIdx": 4,
                 "label": "Average of broker-110/, ascending",
                 "sortAscending": true
               },
               {
                 "type": "AGGREGATION",
-                "measureIdx": 4,
+                "measureIdx": 5,
                 "label": "Average of broker-104/, descending"
               },
               {
                 "type": "AGGREGATION",
-                "measureIdx": 4,
+                "measureIdx": 5,
                 "label": "Average of broker-104/, ascending",
                 "sortAscending": true
               }
@@ -444,6 +455,17 @@
         "facetDimension": [],
         "animationDimension": [],
         "genericMeasures": [
+          {
+            "column": "broker-101/data",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          },
           {
             "column": "broker-109/",
             "function": "AVG",
@@ -577,7 +599,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAjJJREFUaEPtlkFIFFEYx//f7EhJOHjSJQQjPNSyFxHCFSQNVwQVxRU6FKjXkMDTaoguQunioZvgTfGk1Qoioo6URJlBJxESPEkgKhGYQhaz7xMXhAITd1bfG/TNaQbmvd/3//+GxxCu2EVXLC904MtuXBs+MszMNLm8PcUgE2ARCflr/zbPvdYYiIcB7qbYfg33WLUAN8DACMX2ljhmLWD3Zz2snBkIjIGoCgY/hTCKqW/XVvkVpWX4zaett2DYkTJ/v8qhM2GnFTgT0EWsrXhXYS5WLjrp7O06cHA0+BwC30AIrbautqQDVfmu68CnDX10BhARqwz2P/aFBHYTdOLj1gMjSd8FhOPLoiIADyMh/6PXS5t3AGOguczfeNK+ieWdNv5Ds5QlBp3SvBbzy/bdlf2va8HsQKC5NH/l1eedcp9IdgHGj6ZQ/uMTA29O9yRu1vU1/XMy253tYNwDcR6F4zVuQnlhzZkMF0anFzbidVVeGDjTGc4UOFOIl9a7DlzQMZF9O9ewS6y9Gy872oq9FOq0WVwHPs+AbHcNUbj/yXnu6flT+nhAnu+cA+E9GA6uJRN0f3A99bs7H31G1fEXqXs7OgkYOWD+DWIfgF+pZ2AcJttwcAvm9Q9wDmwwBAhrAAIUHqj0hGEZZo8ZOrDMtlWwtGEVrctkasMy21bB0oZVtC6TqQ3LbFsFSxtW0bpMpjYss20VLG1YResymdqwzLZVsLRhFa3LZGrDMttWwToEeFOSKX+YmPYAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAmpJREFUaEPtmE9o01Acx78viZXVlg4dCIrNhB10FETQuwNhatujMJiwg0cZCINkwhSnQ01wKIgnLwoeOk9KW2WI/0AURPAihcEOS0UvnXZU19o26ZOJA5HVvaaPktCXY/L9fd/3+/sklxB02UW6rC+aFla1zH3LTJzyy0KiWjqVN5MjUT07nzfiw81y/5dwVM/eyxvxsb+HVT3zwjISQ+v3BsYfb128daLaicWoenbKMuIz7ZzV0iut6ulZy0hOtHNgu7P9Wvrckpm86taHqXBUz97MG/GzzQ5Rtcx5y0xcdhNi10S678tscrnV2T1a9tAnM/6+1Tmmwq2asupVLXPbMhNnWPU8dB0v3D/55MjSteMveYR349Hxwm5C8pwRhXlu04tegrAXqfDMJAjz3KYXvQRhL1LhmUkQ5rlNL3oJwl6kwjOTIMxzm170EoS9SIVnpg0J0wuR05DoXlB6AIANWb6ERnAB+Klg+7cq9k/OoUFTkMgoAOW3BtRGA3MAiUHCABr0ISSy9sfT/hNYAcUHQHoG4uwEkQvk6JWnm5Wh8/oIGTZSm+lYn29YePDBYCB3MldfN4ndjd2ghD6HgkXq0FBuLPeO9QA3OjrdOwRKCuRi8aOb+X9n6EzPbjJV+bx23xPf8KPXhXCFlK8D2HcnPx4lQA8IyuV66evByLHSQvmtWqe1mt2oSat2sQBC7W3Kjj4ZcqDqVEpbpEBw1VkpyAjIQSnU6xCnHpTDke92sagQJfDDXlkOKqHwm9FXhz1RmAdFVg9RmHVTftUJwn4lx5pbEGbdlF91grBfybHmFoRZN+VXXdcR/gWjn6opowBX7wAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
