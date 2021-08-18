@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629276679524
+    "lastModifiedOn": 1629276714548
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,8 +88,505 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "date",
+        "type": "date"
+      },
+      {
+        "name": "broker-102/",
+        "type": "double"
+      },
+      {
+        "name": "broker-104/",
+        "type": "double"
+      },
+      {
+        "name": "broker-106/",
+        "type": "double"
+      },
+      {
+        "name": "broker-108/",
+        "type": "double"
+      },
+      {
+        "name": "broker-110/",
+        "type": "double"
+      },
+      {
+        "name": "zook-102/",
+        "type": "double"
+      },
+      {
+        "name": "zook-104/",
+        "type": "double"
+      },
+      {
+        "name": "broker-102/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-104/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-106/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-108/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-110/data",
+        "type": "double"
+      },
+      {
+        "name": "zook-102/data",
+        "type": "double"
+      },
+      {
+        "name": "zook-104/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-101/",
+        "type": "double"
+      },
+      {
+        "name": "broker-103/",
+        "type": "double"
+      },
+      {
+        "name": "broker-105/",
+        "type": "double"
+      },
+      {
+        "name": "broker-107/",
+        "type": "double"
+      },
+      {
+        "name": "broker-109/",
+        "type": "double"
+      },
+      {
+        "name": "zook-101/",
+        "type": "double"
+      },
+      {
+        "name": "zook-103/",
+        "type": "double"
+      },
+      {
+        "name": "zook-105/",
+        "type": "double"
+      },
+      {
+        "name": "broker-101/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-103/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-105/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-107/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-109/data",
+        "type": "double"
+      },
+      {
+        "name": "zook-101/data",
+        "type": "double"
+      },
+      {
+        "name": "zook-103/data",
+        "type": "double"
+      },
+      {
+        "name": "zook-105/data",
+        "type": "double"
+      },
+      {
+        "name": "forecast_lower_broker-102/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_broker-102/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_broker-102/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_broker-104/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_broker-104/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_broker-104/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_broker-106/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_broker-106/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_broker-106/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_broker-108/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_broker-108/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_broker-108/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_broker-110/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_broker-110/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_broker-110/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_zook-102/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_zook-102/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_zook-102/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_zook-104/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_zook-104/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_zook-104/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_broker-102/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_broker-102/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_broker-102/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_broker-104/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_broker-104/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_broker-104/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_broker-106/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_broker-106/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_broker-106/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_broker-108/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_broker-108/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_broker-108/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_broker-110/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_broker-110/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_broker-110/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_zook-102/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_zook-102/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_zook-102/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_zook-104/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_zook-104/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_zook-104/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_broker-101/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_broker-101/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_broker-101/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_broker-103/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_broker-103/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_broker-103/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_broker-105/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_broker-105/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_broker-105/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_broker-107/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_broker-107/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_broker-107/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_broker-109/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_broker-109/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_broker-109/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_zook-101/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_zook-101/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_zook-101/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_zook-103/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_zook-103/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_zook-103/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_zook-105/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_zook-105/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_zook-105/",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_broker-101/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_broker-101/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_broker-101/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_broker-103/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_broker-103/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_broker-103/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_broker-105/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_broker-105/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_broker-105/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_broker-107/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_broker-107/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_broker-107/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_broker-109/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_broker-109/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_broker-109/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_zook-101/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_zook-101/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_zook-101/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_zook-103/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_zook-103/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_zook-103/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_lower_zook-105/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_zook-105/data",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_zook-105/data",
+        "type": "float"
+      },
+      {
+        "name": "row_origin",
+        "type": "string"
+      },
+      {
+        "name": "training_session",
+        "type": "string"
+      },
+      {
+        "name": "model",
+        "type": "string"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
