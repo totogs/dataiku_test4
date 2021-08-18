@@ -341,7 +341,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAuJJREFUaENjZBhhgHGE+ZcBp4evqWvs1Lp5w30oBch1dY29mjdvOONzM94YPqeuLmV08+YzZAOuqWks17p1I/Lvkt42pn//JjD8Yz7LwMD4jjGhUJ8egXPG2JjV5OzZ3+TahdPD0+9062SqlF5BN/j/tknsjF55P7FZ+H9BvzcDI0PZtebZWUd2JWilK5WtBqmbdqlBKUuv4R65jlzFwMAcxsDwd9b9rulpimWZt1VU+FTv3PlEjnlYPfx/VR8nY1jRd5iB11Q0LbTuXD8B4+su0N1+OeGyJ4w/40F3coZC6Vx8DriopWWuf+3aSXIcOfteq3iqUvVLkN4Z97tmZiiWpYPYd5R1ZFXuXnkMd8f9zn0ZiuVOZCdpZI0zH3Upp8uV3cVn2OyHPcap8iVnsamZerWBJ1u74Qs2uRn3u1Ywsn9LSpdq+IYuP/1eZ0+mUnkJoYCafr9rWqZiWRYhdTQppXXn6fpfTrq8EWb5/4X92xjjC72uqWvs/83O5qN/6dJXkBx6ysHn2P+Lew/q/pv/67J2rhejSTrWPKyzUEfvCueVqwxhDH9hZk2/2xnNyMgQkKFUHgoSI+hh/YX6ZhfjL57SXqjdfjX+aiWhEMQl/3/+hEeMiQVyGGXCgv5HDIz/ZjPGFzeTavb/+RPeMzD+/8qYUCiDtUwByTP9XcPwn8kTpoagh0l1BC71OvN1dl1mSDFhTCwQQlejt0jP/N/ff2VXEq8EI8v9X9JjyhhTcpqQG7QXaPtdTbi6CcPcBXptlxIuVYHEteZrGVxLvHaBbh4m5Ghs8tqLtH2vxl3dTI5eXHoGtYep6VGYWaMepkWoDiYzR2N4MMUGLdwyGsO0CNXBZOZoDA+m2KCFW0ZjmBahOpjMHI3hwRQbtHDLaAzTIlQHk5mjMTyYYoMWbhmNYVqE6mAyczSGB1Ns0MItozFMi1AdTGaOxvBgig1auGU0hmkRqoPJzNEYHkyxQQu3AAAfJ9wpC1jNBQAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAsNJREFUaEPtlV9IFEEcx3fs6YSEpD8vBhnhzu5s0kOQEkEP/SGyECIf1Ly9INL+UHeJhyU9hGWK3hUI+hLuHuaDYRAR0R8oKOigHqzbWXcPS8GnIAqitAKdMFnYdNV2mXTA2ceZ+X3n+/1+dlkgrLAHBM07BGGpZFmvgs4v19y8gU0RPpJta7+XMbMI6tLFkweAGl2/XMYXuheLsBfZVrW5RSqRh4fS7rOBCBM9mQbhaMm0EOltl0F1vellACOUjzD+vJSlGKJ4RbHty/Pd6Tswud2yBlQ1fnELdo+2Pa3d1LDnTwF6+zkQrr/5v0J2fWg9U7c53ulZcBF8grLW3oXu9gxM+q5uAJWXPjqDWBSrhKlVWM7itwAA4hZEOmrBYdyIRXgH2dbRdxCWvnwYIacK43+9SomxRCi2MTYRtAizCA7IWevI7PmxgoLQ17y8SWSav5y9rpGW3XWFjc+97vJN2K9hoiXfADW6fXrOFMUHsm0f9NLoHmkdqC2Mzwnk977FzvsOLPfI28yIOThbGGkogVUcc68rmvLYUI197jVLFI8TAF5LlpWZXh+CsFKyrL7FjM58Lsnr5VN3d92LvNhJtBufgHp+7ew5kko8U8CtE/gYHkYaasAqbusebWuaIOOdIZJ72HfgfzHmdUbRlPuGahzy2iNa8r2Q+7NcEFaPgIrT3zzPpDqaQc2FJmdP0ZX+zI+zVULoexzUxJqddecTc2uQVCItCMQQpnLKliywY4DoHYOCkGOCcLTSbao4VbyDTBIpE8loc6j1X1u3dbyvx1CNsiCFo36Ujytm/hZLHjiIYZozPDDNNlnU4oRZpELTEydMs00WtThhFqnQ9MQJ02yTRS1OmEUqND1xwjTbZFGLE2aRCk1PnDDNNlnU4oRZpELTEydMs00WtThhFqnQ9MQJ02yTRS1OmEUqND2tOMK/AUOZ2Z0yE74/AAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
@@ -354,7 +354,7 @@
       "def": {
         "type": "lines",
         "variant": "normal",
-        "name": "Avg. of broker-101/data by date",
+        "name": "Avg. of broker-107/ by date",
         "userEditedName": false,
         "genericDimension0": [
           {
@@ -380,66 +380,77 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of broker-101/data, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Average of broker-101/data, ascending",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 1,
-                "label": "Average of broker-109/, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 1,
-                "label": "Average of broker-109/, ascending",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 2,
                 "label": "Average of broker-107/, descending"
               },
               {
                 "type": "AGGREGATION",
-                "measureIdx": 2,
+                "measureIdx": 0,
                 "label": "Average of broker-107/, ascending",
                 "sortAscending": true
               },
               {
                 "type": "AGGREGATION",
-                "measureIdx": 3,
-                "label": "Average of broker-101/, descending"
+                "measureIdx": 1,
+                "label": "Average of broker-101/data, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
+                "label": "Average of broker-101/data, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 2,
+                "label": "Average of broker-109/, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 2,
+                "label": "Average of broker-109/, ascending",
+                "sortAscending": true
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 3,
+                "label": "Average of broker-107/, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 3,
+                "label": "Average of broker-107/, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 4,
+                "label": "Average of broker-101/, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 4,
                 "label": "Average of broker-101/, ascending",
                 "sortAscending": true
               },
               {
                 "type": "AGGREGATION",
-                "measureIdx": 4,
+                "measureIdx": 5,
                 "label": "Average of broker-110/, descending"
               },
               {
                 "type": "AGGREGATION",
-                "measureIdx": 4,
+                "measureIdx": 5,
                 "label": "Average of broker-110/, ascending",
                 "sortAscending": true
               },
               {
                 "type": "AGGREGATION",
-                "measureIdx": 5,
+                "measureIdx": 6,
                 "label": "Average of broker-104/, descending"
               },
               {
                 "type": "AGGREGATION",
-                "measureIdx": 5,
+                "measureIdx": 6,
                 "label": "Average of broker-104/, ascending",
                 "sortAscending": true
               }
@@ -455,6 +466,17 @@
         "facetDimension": [],
         "animationDimension": [],
         "genericMeasures": [
+          {
+            "column": "broker-107/",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          },
           {
             "column": "broker-101/data",
             "function": "AVG",
@@ -599,7 +621,177 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAmpJREFUaEPtmE9o01Acx78viZXVlg4dCIrNhB10FETQuwNhatujMJiwg0cZCINkwhSnQ01wKIgnLwoeOk9KW2WI/0AURPAihcEOS0UvnXZU19o26ZOJA5HVvaaPktCXY/L9fd/3+/sklxB02UW6rC+aFla1zH3LTJzyy0KiWjqVN5MjUT07nzfiw81y/5dwVM/eyxvxsb+HVT3zwjISQ+v3BsYfb128daLaicWoenbKMuIz7ZzV0iut6ulZy0hOtHNgu7P9Wvrckpm86taHqXBUz97MG/GzzQ5Rtcx5y0xcdhNi10S678tscrnV2T1a9tAnM/6+1Tmmwq2asupVLXPbMhNnWPU8dB0v3D/55MjSteMveYR349Hxwm5C8pwRhXlu04tegrAXqfDMJAjz3KYXvQRhL1LhmUkQ5rlNL3oJwl6kwjOTIMxzm170EoS9SIVnpg0J0wuR05DoXlB6AIANWb6ERnAB+Klg+7cq9k/OoUFTkMgoAOW3BtRGA3MAiUHCABr0ISSy9sfT/hNYAcUHQHoG4uwEkQvk6JWnm5Wh8/oIGTZSm+lYn29YePDBYCB3MldfN4ndjd2ghD6HgkXq0FBuLPeO9QA3OjrdOwRKCuRi8aOb+X9n6EzPbjJV+bx23xPf8KPXhXCFlK8D2HcnPx4lQA8IyuV66evByLHSQvmtWqe1mt2oSat2sQBC7W3Kjj4ZcqDqVEpbpEBw1VkpyAjIQSnU6xCnHpTDke92sagQJfDDXlkOKqHwm9FXhz1RmAdFVg9RmHVTftUJwn4lx5pbEGbdlF91grBfybHmFoRZN+VXXdcR/gWjn6opowBX7wAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAn5JREFUaENjZBhhgHGE+ZcBp4fXHX+xJMhSImaoBMja4y9WBFtKRKw79mJnkJWEOy53443htceeLwy2koxH1rzu+Iv9QZYSjjCxbdtus3t5qf6kR8CsPfqiJthaooUSu0hK0uuOP+8NspQspsRCSvWuPfaiMthKop1cc4jy8LpjLyYEWUkU4LJk7bGXtcFW4s3kOGLz/mcivo5Sb0jVu+bkM5MQc6kzpOojysOkGkqs+vXHX04NtBTPJlY9NdTR3cPrj792CLQUPUANx5NjBt09TI4jqaln1MPUDM3BaNZoDA/GWKGmm0ZjmJqhORjNGo3hwRgr1HTTaAxTMzQHo1mjMTwYY4WabhqNYWqG5mA0azSGB2OsUNNNWGN47eL+2bzMv5XE2X+pMjEw/rz0ib1cjPvPXj6WfywP//D/bPw+bQnzP+YV/xj/RTMyMLL8Z/j/h4GB4Q/Tf6aV//7/02FgZFBhYmDa8J/xfzxUjgGq7jwTA9Pe/0z/xf///f/6SuKV3YQ8ozdfL+JS4qUVhNQRK4/Vww1XG9jqtep/wwyZ8aCzn5mZcd+//3/v/P/LzJOpVH6KWAvIUbdo7qSC7/8ZH6Sn5G4gRz+6nskzJpvkZuSCB/wGRR7+3ynC+/fnv57/jAwa670T5RgYGDgZGRi+/eDgfqt+8/ynR3Kq8n9YWH/9ZWJh+s7J9fo/A+Mfzu9fRJj//2P7zcr+ifn3L64fnDyvmf/+YWb79UPgPxPTb/af3/i/c/K+Z/z7l+0HB9cb9t8/eWO1mkwHhYepEYvEmjHqYWJDaqiqG43hoRpzxLp7NIaJDamhqm40hodqzBHr7tEYJjakhqq6ERfDAKNwuymmGXDaAAAAAElFTkSuQmCC",
+        "disableSafetyLimits": false,
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT"
+      },
+      "maxDataBytes": 157286400
+    },
+    {
+      "copySelectionFromScript": true,
+      "engineType": "LINO",
+      "def": {
+        "type": "lines",
+        "variant": "normal",
+        "name": "Avg. of zook-103/data by date",
+        "userEditedName": false,
+        "genericDimension0": [
+          {
+            "column": "date",
+            "type": "DATE",
+            "numParams": {
+              "emptyBinsMode": "AVERAGE"
+            },
+            "dateParams": {
+              "mode": "AUTOMATIC"
+            },
+            "maxValues": 0,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of zook-103/data, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of zook-103/data, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
+                "label": "Average of zook-105/data, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
+                "label": "Average of zook-105/data, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
+        "genericDimension1": [],
+        "facetDimension": [],
+        "animationDimension": [],
+        "genericMeasures": [
+          {
+            "column": "zook-103/data",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          },
+          {
+            "column": "zook-105/data",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          }
+        ],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaSize": [],
+        "uaShape": [],
+        "uaColor": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [],
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "includeZero": true,
+        "smoothing": true,
+        "showLegend": true,
+        "showXAxis": false,
+        "showInChartValues": false,
+        "showInChartLabels": true,
+        "strokeWidth": 1,
+        "fillOpacity": 0.6,
+        "showXAxisLabel": true,
+        "showYAxisLabel": true,
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "chartHeight": 200,
+        "singleXAxis": true,
+        "multiTooltips": false,
+        "animationFrameDuration": 3000,
+        "animationRepeat": true,
+        "colorOptions": {
+          "singleColor": "#2678B1",
+          "transparency": 0.75,
+          "colorPalette": "default",
+          "ccScaleMode": "NORMAL",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom Palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "paletteType": "CONTINUOUS",
+          "quantizationMode": "NONE",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0
+        },
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "computeMode": "NORMAL",
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
+        },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAYxJREFUaENjZBhhgHGE+Zdh1MPDPcZHY3igYlihYb/AgwbHD7S2f9DEsELpNvsH3V4Hqelh9eodc2+2eiQjm0lTD8sUruJE9wAfP8NfZLFrVxn+MqwO+ytfvnXew07vJGp6eMaeh5syXOT9qObhtcde1qI58BWMH2wlPnPtkRcoloHk/jP8e8bKzvqZ4SfDZ5hafxvRZ+R4VKFia+GDDu9+XHrn7H04K8VZPo1qHibHkdTUM3vPo6ZUF7k6XGauPvHMLdRCatew8XDvlnuhkw9f+/Sg02cnNk+vP/pSOdBa/O6w8fC6oy90WNn/3fM1kfpGbMohutBaf+JlcKCF+FpiDaaXujUnX7qHmItjjWFsbiDaw/TyAK3tGfUwrUOY3uavO/5iP8zOIEsJx9EYpncM0Nu+0Rimd4jT277RGKZ3iNPbvtEYpneI09u+0Rimd4jT277RGKZ3iNPbvtEYpneI09u+0Rimd4jT277RGKZ3iNPbvtEYpneI09u+0Rimd4jT277RGKZ3iNPbPgBZ5lgprG9eGAAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
