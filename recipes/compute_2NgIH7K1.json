@@ -1,0 +1,74 @@
+{
+  "type": "CustomCode_timeseries-forecast-1-train-evaluate",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "customConfig": {},
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "variables": {},
+  "dkuProperties": [],
+  "inputs": {
+    "input_dataset": {
+      "items": [
+        {
+          "ref": "Json_prepared",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "model_folder": {
+      "items": [
+        {
+          "ref": "2NgIH7K1",
+          "appendMode": false
+        }
+      ]
+    },
+    "evaluation_dataset": {
+      "items": [
+        {
+          "ref": "performance",
+          "appendMode": false
+        }
+      ]
+    },
+    "evaluation_forecasts_dataset": {
+      "items": [
+        {
+          "ref": "evaluation",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "labels": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "tony"
+    },
+    "lastModifiedOn": 1629274662950
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "tony"
+    },
+    "lastModifiedOn": 1629274662950
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
