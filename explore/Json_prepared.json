@@ -634,7 +634,7 @@
       "def": {
         "type": "lines",
         "variant": "normal",
-        "name": "Avg. of zook-103/data by date",
+        "name": "Avg. of broker-107/data by date",
         "userEditedName": false,
         "genericDimension0": [
           {
@@ -660,23 +660,12 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of zook-103/data, descending"
+                "label": "Average of broker-107/data, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of zook-103/data, ascending",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 1,
-                "label": "Average of zook-105/data, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 1,
-                "label": "Average of zook-105/data, ascending",
+                "label": "Average of broker-107/data, ascending",
                 "sortAscending": true
               }
             ],
@@ -692,18 +681,7 @@
         "animationDimension": [],
         "genericMeasures": [
           {
-            "column": "zook-103/data",
-            "function": "AVG",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
-          },
-          {
-            "column": "zook-105/data",
+            "column": "broker-107/data",
             "function": "AVG",
             "type": "NUMERICAL",
             "displayed": true,
@@ -791,7 +769,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAYxJREFUaENjZBhhgHGE+Zdh1MPDPcZHY3igYlihYb/AgwbHD7S2f9DEsELpNvsH3V4Hqelh9eodc2+2eiQjm0lTD8sUruJE9wAfP8NfZLFrVxn+MqwO+ytfvnXew07vJGp6eMaeh5syXOT9qObhtcde1qI58BWMH2wlPnPtkRcoloHk/jP8e8bKzvqZ4SfDZ5hafxvRZ+R4VKFia+GDDu9+XHrn7H04K8VZPo1qHibHkdTUM3vPo6ZUF7k6XGauPvHMLdRCatew8XDvlnuhkw9f+/Sg02cnNk+vP/pSOdBa/O6w8fC6oy90WNn/3fM1kfpGbMohutBaf+JlcKCF+FpiDaaXujUnX7qHmItjjWFsbiDaw/TyAK3tGfUwrUOY3uavO/5iP8zOIEsJx9EYpncM0Nu+0Rimd4jT277RGKZ3iNPbvtEYpneI09u+0Rimd4jT277RGKZ3iNPbvtEYpneI09u+0Rimd4jT277RGKZ3iNPbvtEYpneI09u+0Rimd4jT277RGKZ3iNPbPgBZ5lgprG9eGAAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAU5JREFUaEPtkb1qAkEUhWfsYm0luKOPEMgL2MbRRBBMGxDSB9ndckt3kWBrZZ3O6K6+RCCPEHcFqxS2YsJICkHEn8v4e9m77Z47nO98nMXs4zHjZdrAwg5qSqlKYjZ/GrXKUyzDaQNvAsya/eeRV+xcM/xGYGH5b6ErX3WLC/vjNmw8fOnen/LuqIZPWfRYb6MBFqY/ZJz9ha6Uh8CfBThjBndjr/CpUzRjD6rjxv37ttu0009NnOLPrrcNy+9Grnz8z5wFeL2MYQXd6CZZYU7+d/lP1Hu5sFn6Xs0apt+OPPmiM9S2m4sA7wVQijPO1d6cRuA6gTVAoCcEDF0Ka44MYzUH7U2GoUthzZFhrOagvckwdCmsOTKM1Ry0NxmGLoU1R4axmoP2JsPQpbDmyDBWc9DeZBi6FNYcGcZqDtqbDEOXwpojw1jNQXvHzvACPoU7Kci560YAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
