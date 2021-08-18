@@ -101,7 +101,8 @@
       "time_column": "date"
     },
     "containerSelection": {
-      "containerMode": "INHERIT"
+      "containerMode": "EXPLICIT_CONTAINER",
+      "containerConf": "gpu_gke"
     }
   },
   "customMeta": {
@@ -149,11 +150,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629277579440
+    "lastModifiedOn": 1629289205570
   },
   "creationTag": {
     "versionNumber": 0,
