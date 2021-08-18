@@ -323,6 +323,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -340,7 +341,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAudJREFUaENjZBhhgHGE+ZcBp4evqmss0b55I2aoBMhVNfUV2rduRlxT19ipdfOGOy53443hK2oaC3Vu3YhH1nxNXWP/4R1Jv9KOMe3494e54s+ndy7suc2X6REw19Q1a7RuXm+hxC6cHp5xv7MjQ7G8Atnwq2oavdq3bhTjsvD/ggnPGRMKJClxEC69M+93FqQrlk+4qqZRqX3rRju5dmD18P//DUz6S9dJZVlFCWcoVVy8pq45QbMm+RVjbEkbyCKH/Q4s7+68k7iUeukJiH9NXbNW6+b1ZhB7xu02rQzVqmvIDppxv2tnhmIZ1mR2U01NRP3WrTfEeGDGvc45GUrlKSC1l9XVTXRv3jwD0zfjfueODMVyD0LmEF1ozbzfNTddsSwZl4GTbjfw5ak2fCJkIWr2UJ+qdfNm9oy7XZEZymXLidE740G3ZYZC6XFktbMf9oSkypesIUY/0R7GZ5jWKi22a2HXfiGrUZ+rznsz+eZndH3XNTQcNG/cOECM42Bq/i/qPaD7f/6/K/FXnHDp01ug53cp4dImmPzM+13T0hXLsuBmLO7bxhhb5EXQw7oLdf0vx1/eqLtAd9nlhMtRpDiUGLX/N7aKM/pXv8RZLixp4GOMwUw5/+dPeM/A+O8pY0KRDja9/xf0v2Zg+j+Z4R+jD2NCoRlMDUEPE+NoYtT8X9QzhYGJgYcxpiQBpP7/zJmsjOnpv0Fs3Xm69peTLh/8v6JXjTGi+BYx5sHU6C7Q3X454bInuh7tedpaV5OugssSnQU6m64kXPEDsenmYYP5BgIXEi98QHaYzgKdlisJV2pI8SClaunmYUodSi39ox6mVkgOVnNGY3iwxgy13DUaw9QKycFqzmgMD9aYoZa7RmOYWiE5WM0ZjeHBGjPUctdoDFMrJAerOaMxPFhjhlruGo1haoXkYDVnNIYHa8xQy12jMUytkBys5ozG8GCNGWq5azSGqRWSg9Wc0RgerDFDLXcBAJel3ilBlE0JAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAuJJREFUaENjZBhhgHGE+ZcBp4evqWvs1Lp5w30oBch1dY29mjdvOONzM94YPqeuLmV08+YzZAOuqWks17p1I/Lvkt42pn//JjD8Yz7LwMD4jjGhUJ8egXPG2JjV5OzZ3+TahdPD0+9062SqlF5BN/j/tknsjF55P7FZ+H9BvzcDI0PZtebZWUd2JWilK5WtBqmbdqlBKUuv4R65jlzFwMAcxsDwd9b9rulpimWZt1VU+FTv3PlEjnlYPfx/VR8nY1jRd5iB11Q0LbTuXD8B4+su0N1+OeGyJ4w/40F3coZC6Vx8DriopWWuf+3aSXIcOfteq3iqUvVLkN4Z97tmZiiWpYPYd5R1ZFXuXnkMd8f9zn0ZiuVOZCdpZI0zH3Upp8uV3cVn2OyHPcap8iVnsamZerWBJ1u74Qs2uRn3u1Ywsn9LSpdq+IYuP/1eZ0+mUnkJoYCafr9rWqZiWRYhdTQppXXn6fpfTrq8EWb5/4X92xjjC72uqWvs/83O5qN/6dJXkBx6ysHn2P+Lew/q/pv/67J2rhejSTrWPKyzUEfvCueVqwxhDH9hZk2/2xnNyMgQkKFUHgoSI+hh/YX6ZhfjL57SXqjdfjX+aiWhEMQl/3/+hEeMiQVyGGXCgv5HDIz/ZjPGFzeTavb/+RPeMzD+/8qYUCiDtUwByTP9XcPwn8kTpoagh0l1BC71OvN1dl1mSDFhTCwQQlejt0jP/N/ff2VXEq8EI8v9X9JjyhhTcpqQG7QXaPtdTbi6CcPcBXptlxIuVYHEteZrGVxLvHaBbh4m5Ghs8tqLtH2vxl3dTI5eXHoGtYep6VGYWaMepkWoDiYzR2N4MMUGLdwyGsO0CNXBZOZoDA+m2KCFW0ZjmBahOpjMHI3hwRQbtHDLaAzTIlQHk5mjMTyYYoMWbhmNYVqE6mAyczSGB1Ns0MItozFMi1AdTGaOxvBgig1auGU0hmkRqoPJzNEYHkyxQQu3AAAfJ9wpC1jNBQAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
@@ -602,6 +603,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
