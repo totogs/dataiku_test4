@@ -12,7 +12,7 @@
       "sampling_method": "last_records",
       "number_records": 10000,
       "prediction_length": 10,
-      "forecasting_style": "auto",
+      "forecasting_style": "choose_algorithms",
       "season_length_min": 1,
       "season_length_H": 24,
       "season_length_D": 7,
@@ -22,9 +22,9 @@
       "season_length_3M": 4,
       "season_length_6M": 2,
       "season_length_12M": 1,
-      "trivial_identity_model_activated": true,
-      "seasonal_naive_model_activated": true,
-      "autoarima_model_activated": false,
+      "trivial_identity_model_activated": false,
+      "seasonal_naive_model_activated": false,
+      "autoarima_model_activated": true,
       "autoarima_model_kwargs": {
         "seasonal": "True"
       },
@@ -36,7 +36,7 @@
       "npts_model_kwargs": {
         "use_seasonal_model": "True"
       },
-      "simplefeedforward_model_activated": true,
+      "simplefeedforward_model_activated": false,
       "simplefeedforward_model_kwargs": {
         "num_hidden_dimensions": "[40, 40]"
       },
@@ -149,11 +149,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629277451376
+    "lastModifiedOn": 1629277497840
   },
   "creationTag": {
     "versionNumber": 0,
