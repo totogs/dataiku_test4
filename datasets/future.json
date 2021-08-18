@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629276714548
+    "lastModifiedOn": 1629276716870
   },
   "creationTag": {
     "versionNumber": 0,
@@ -215,375 +215,468 @@
       },
       {
         "name": "forecast_lower_broker-102/",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_broker-102/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_broker-102/",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_broker-104/",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_broker-104/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_broker-104/",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_broker-106/",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_broker-106/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_broker-106/",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_broker-108/",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_broker-108/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_broker-108/",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_broker-110/",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_broker-110/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_broker-110/",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_zook-102/",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_zook-102/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_zook-102/",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_zook-104/",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_zook-104/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_zook-104/",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_broker-102/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_broker-102/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_broker-102/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_broker-104/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_broker-104/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_broker-104/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_broker-106/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_broker-106/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_broker-106/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_broker-108/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_broker-108/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_broker-108/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_broker-110/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_broker-110/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_broker-110/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_zook-102/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_zook-102/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_zook-102/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_zook-104/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_zook-104/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_zook-104/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_broker-101/",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_broker-101/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_broker-101/",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_broker-103/",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_broker-103/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_broker-103/",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_broker-105/",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_broker-105/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_broker-105/",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_broker-107/",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_broker-107/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_broker-107/",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_broker-109/",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_broker-109/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_broker-109/",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_zook-101/",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_zook-101/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_zook-101/",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_zook-103/",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_zook-103/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_zook-103/",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_zook-105/",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_zook-105/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_zook-105/",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_broker-101/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_broker-101/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_broker-101/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_broker-103/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_broker-103/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_broker-103/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_broker-105/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_broker-105/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_broker-105/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_broker-107/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_broker-107/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_broker-107/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_broker-109/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_broker-109/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_broker-109/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_zook-101/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_zook-101/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_zook-101/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_zook-103/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_zook-103/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_zook-103/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_lower_zook-105/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_zook-105/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_zook-105/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "row_origin",
-        "type": "string"
+        "type": "string",
+        "comment": "Row origin"
       },
       {
         "name": "training_session",
-        "type": "string"
+        "type": "string",
+        "comment": "Timestamp of training session"
       },
       {
         "name": "model",
-        "type": "string"
+        "type": "string",
+        "comment": "Model name"
       }
     ],
     "userModified": false
