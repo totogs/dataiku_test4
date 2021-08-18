@@ -11,7 +11,7 @@
       "additional_columns": false,
       "sampling_method": "last_records",
       "number_records": 10000,
-      "prediction_length": 10,
+      "prediction_length": 8,
       "forecasting_style": "choose_algorithms",
       "season_length_min": 1,
       "season_length_H": 24,
@@ -54,7 +54,7 @@
       "tft_model_kwargs": {},
       "nbeats_model_activated": false,
       "nbeats_model_kwargs": {},
-      "epoch": 10,
+      "epoch": 3,
       "batch_size": 32,
       "auto_num_batches_per_epoch": false,
       "num_batches_per_epoch": 50,
@@ -149,11 +149,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629277497840
+    "lastModifiedOn": 1629277579440
   },
   "creationTag": {
     "versionNumber": 0,
