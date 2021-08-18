@@ -424,34 +424,12 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 4,
-                "label": "Average of zook-101/, descending"
+                "label": "Average of broker-104/, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 4,
-                "label": "Average of zook-101/, ascending",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 5,
-                "label": "Average of zook-105/, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 5,
-                "label": "Average of zook-105/, ascending",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 6,
-                "label": "Average of zook-104/, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 6,
-                "label": "Average of zook-104/, ascending",
+                "label": "Average of broker-104/, ascending",
                 "sortAscending": true
               }
             ],
@@ -511,29 +489,7 @@
             "computeModeDim": 0
           },
           {
-            "column": "zook-101/",
-            "function": "AVG",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
-          },
-          {
-            "column": "zook-105/",
-            "function": "AVG",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
-          },
-          {
-            "column": "zook-104/",
+            "column": "broker-104/",
             "function": "AVG",
             "type": "NUMERICAL",
             "displayed": true,
@@ -621,7 +577,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAgpJREFUaEPtlLGLE0EYxd83M7vZmOTOaC4RxNOoB6cgWB7Yi3AB/wFbwUZEBG3vwMLGxj9ArtfCwmsEtRBLxUrR5jz1CiWXxUQ3m8zOfLJiUNTy2D02s9V+MMz73vs9hjBlH02ZXzjDRSfuCDvCBUvAVbpgQP+x4wg7wgVLwFW6YEDdo+Uq7SpdsARcpQsG1L3SrtKu0jucAK9AAdVFJLIJaa+A8BmMBRA2wHQQjG0INGD5JQgnaHVwnldmL4FtO51h8RqCTsP+XEyA2ANoDLZvALH4a93nYP4OorMgLoFpBIKh1f6yq/QEaPva+uGN28ub6Tx/Y/0BwPeJsQWB9uatzt0dBp/ZdbuG8Pz1h48I0E/PvJgzoAYzf1yoDl+derJEl49uJZ3ml1ZVmfaMMt/SGkdGlaOEgv2+/tTV/qE5f9wD8O7DsDwbCBM/7u7zO63t4was9yrzPjLyWOXczaVdYzgrxP81fGftwrMAckBhdIQIrFjEk4X6dS9K/yWE9kBxqRcfsGQlQSR/n0nnsl/ixFpZC8cVmyRGep7q1/2RJKGtMdaTytgkiYVSQdAb1rXWybBZMYJga2+7rbAmRo0BU1gT4/S+mYGpTnRGPsWj0m9dKZX8Wle6Fuo9fwYoQDqdL169d9IRzqpaeek4wnkln5WuI5xV0nnpOMJ5JZ+VriOcVdJ56Uwd4R/hF6cpWlmDVgAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAjJJREFUaEPtlkFIFFEYx//f7EhJOHjSJQQjPNSyFxHCFSQNVwQVxRU6FKjXkMDTaoguQunioZvgTfGk1Qoioo6URJlBJxESPEkgKhGYQhaz7xMXhAITd1bfG/TNaQbmvd/3//+GxxCu2EVXLC904MtuXBs+MszMNLm8PcUgE2ARCflr/zbPvdYYiIcB7qbYfg33WLUAN8DACMX2ljhmLWD3Zz2snBkIjIGoCgY/hTCKqW/XVvkVpWX4zaett2DYkTJ/v8qhM2GnFTgT0EWsrXhXYS5WLjrp7O06cHA0+BwC30AIrbautqQDVfmu68CnDX10BhARqwz2P/aFBHYTdOLj1gMjSd8FhOPLoiIADyMh/6PXS5t3AGOguczfeNK+ieWdNv5Ds5QlBp3SvBbzy/bdlf2va8HsQKC5NH/l1eedcp9IdgHGj6ZQ/uMTA29O9yRu1vU1/XMy253tYNwDcR6F4zVuQnlhzZkMF0anFzbidVVeGDjTGc4UOFOIl9a7DlzQMZF9O9ewS6y9Gy872oq9FOq0WVwHPs+AbHcNUbj/yXnu6flT+nhAnu+cA+E9GA6uJRN0f3A99bs7H31G1fEXqXs7OgkYOWD+DWIfgF+pZ2AcJttwcAvm9Q9wDmwwBAhrAAIUHqj0hGEZZo8ZOrDMtlWwtGEVrctkasMy21bB0oZVtC6TqQ3LbFsFSxtW0bpMpjYss20VLG1YResymdqwzLZVsLRhFa3LZGrDMttWwToEeFOSKX+YmPYAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
