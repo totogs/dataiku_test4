@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629274784192
+    "lastModifiedOn": 1629274786496
   },
   "creationTag": {
     "versionNumber": 0,
@@ -219,371 +219,463 @@
       },
       {
         "name": "trivial_identity_broker-102/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_broker-104/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_broker-106/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_broker-108/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_broker-110/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_zook-102/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_zook-104/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_broker-102/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_broker-104/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_broker-106/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_broker-108/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_broker-110/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_zook-102/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_zook-104/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_broker-101/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_broker-103/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_broker-105/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_broker-107/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_broker-109/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_zook-101/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_zook-103/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_zook-105/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_broker-101/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_broker-103/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_broker-105/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_broker-107/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_broker-109/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_zook-101/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_zook-103/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "trivial_identity_zook-105/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "seasonal_naive_broker-102/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_broker-104/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_broker-106/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_broker-108/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_broker-110/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_zook-102/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_zook-104/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_broker-102/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_broker-104/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_broker-106/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_broker-108/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_broker-110/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_zook-102/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_zook-104/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_broker-101/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_broker-103/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_broker-105/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_broker-107/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_broker-109/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_zook-101/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_zook-103/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_zook-105/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_broker-101/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_broker-103/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_broker-105/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_broker-107/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_broker-109/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_zook-101/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_zook-103/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "seasonal_naive_zook-105/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "simplefeedforward_broker-102/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_broker-104/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_broker-106/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_broker-108/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_broker-110/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_zook-102/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_zook-104/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_broker-102/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_broker-104/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_broker-106/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_broker-108/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_broker-110/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_zook-102/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_zook-104/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_broker-101/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_broker-103/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_broker-105/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_broker-107/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_broker-109/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_zook-101/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_zook-103/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_zook-105/",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_broker-101/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_broker-103/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_broker-105/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_broker-107/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_broker-109/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_zook-101/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_zook-103/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "simplefeedforward_zook-105/data",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "row_origin",
-        "type": "string"
+        "type": "string",
+        "comment": "Row origin"
       },
       {
         "name": "training_session",
-        "type": "string"
+        "type": "string",
+        "comment": "Timestamp of training session"
       }
     ],
     "userModified": false
