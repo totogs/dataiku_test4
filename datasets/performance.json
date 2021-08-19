@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629280502121
+    "lastModifiedOn": 1629370235396
   },
   "creationTag": {
     "versionNumber": 0,
@@ -91,68 +91,55 @@
     "columns": [
       {
         "name": "target_column",
-        "type": "string",
-        "comment": "Aggregated and per-time-series metrics"
+        "type": "string"
       },
       {
         "name": "model",
-        "type": "string",
-        "comment": "Model name"
+        "type": "string"
       },
       {
         "name": "mse",
-        "type": "double",
-        "comment": "Mean Squared Error"
+        "type": "double"
       },
       {
         "name": "mase",
-        "type": "double",
-        "comment": "Mean Absolute Scaled Error"
+        "type": "double"
       },
       {
         "name": "mape",
-        "type": "double",
-        "comment": "Mean Absolute Percentage Error"
+        "type": "double"
       },
       {
         "name": "smape",
-        "type": "double",
-        "comment": "Symmetric Mean Absolute Percentage Error"
+        "type": "double"
       },
       {
         "name": "msis",
-        "type": "double",
-        "comment": "Mean Scaled Interval Score"
+        "type": "double"
       },
       {
         "name": "rmse",
-        "type": "double",
-        "comment": "Root Mean Square Error"
+        "type": "double"
       },
       {
         "name": "nd",
-        "type": "double",
-        "comment": "Normalized Deviation"
+        "type": "double"
       },
       {
         "name": "mean_wquantileloss",
-        "type": "double",
-        "comment": "Mean Weighted Quantile Loss"
+        "type": "double"
       },
       {
         "name": "run_time",
-        "type": "double",
-        "comment": "Time elapsed during model training and evaluation (in seconds)"
+        "type": "double"
       },
       {
         "name": "model_params",
-        "type": "string",
-        "comment": "Parameters used for training"
+        "type": "string"
       },
       {
         "name": "training_session",
-        "type": "string",
-        "comment": "Timestamp of training session"
+        "type": "string"
       }
     ],
     "userModified": false
