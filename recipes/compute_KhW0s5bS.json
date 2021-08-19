@@ -12,7 +12,7 @@
       "sampling_method": "last_records",
       "number_records": 10000,
       "prediction_length": 15,
-      "forecasting_style": "choose_algorithms",
+      "forecasting_style": "auto",
       "season_length_min": 1,
       "season_length_H": 24,
       "season_length_D": 7,
@@ -61,7 +61,7 @@
       "evaluation_strategy": "split",
       "external_feature_activated": false,
       "evaluation_only": false,
-      "use_gpu": false,
+      "use_gpu": true,
       "gpu_location": "container_gpu",
       "target_columns": [
         "broker-101/",
@@ -150,11 +150,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629384101225
+    "lastModifiedOn": 1629385336016
   },
   "creationTag": {
     "versionNumber": 0,
