@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629370238263
+    "lastModifiedOn": 1629456224357
   },
   "creationTag": {
     "versionNumber": 0,
@@ -219,313 +219,251 @@
       },
       {
         "name": "autoarima_broker-102/",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_broker-104/",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_broker-106/",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_broker-108/",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_broker-110/",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_zook-102/",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_zook-104/",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_broker-102/data",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_broker-104/data",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_broker-106/data",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_broker-108/data",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_broker-110/data",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_zook-102/data",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_zook-104/data",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_broker-101/",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_broker-103/",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_broker-105/",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_broker-107/",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_broker-109/",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_zook-101/",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_zook-103/",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_zook-105/",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_broker-101/data",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_broker-103/data",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_broker-105/data",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_broker-107/data",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_broker-109/data",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_zook-101/data",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_zook-103/data",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "autoarima_zook-105/data",
-        "type": "double",
-        "comment": "Median forecasts of [1] using autoarima model"
+        "type": "double"
       },
       {
         "name": "deepar_broker-102/",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_broker-104/",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_broker-106/",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_broker-108/",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_broker-110/",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_zook-102/",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_zook-104/",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_broker-102/data",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_broker-104/data",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_broker-106/data",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_broker-108/data",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_broker-110/data",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_zook-102/data",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_zook-104/data",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_broker-101/",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_broker-103/",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_broker-105/",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_broker-107/",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_broker-109/",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_zook-101/",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_zook-103/",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_zook-105/",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_broker-101/data",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_broker-103/data",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_broker-105/data",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_broker-107/data",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_broker-109/data",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_zook-101/data",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_zook-103/data",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "deepar_zook-105/data",
-        "type": "float",
-        "comment": "Median forecasts of [1] using deepar model"
+        "type": "float"
       },
       {
         "name": "row_origin",
-        "type": "string",
-        "comment": "Row origin"
+        "type": "string"
       },
       {
         "name": "training_session",
-        "type": "string",
-        "comment": "Timestamp of training session"
+        "type": "string"
       }
     ],
     "userModified": false
