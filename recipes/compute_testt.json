@@ -4,10 +4,12 @@
   "optionalDependencies": false,
   "params": {
     "envSelection": {
-      "envMode": "INHERIT"
+      "envMode": "EXPLICIT_ENV",
+      "envName": "asl_alphabet"
     },
     "containerSelection": {
-      "containerMode": "INHERIT"
+      "containerMode": "EXPLICIT_CONTAINER",
+      "containerConf": "gpu_gke_2"
     },
     "skipPrerunValidate": false
   },
@@ -40,11 +42,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629734324003
+    "lastModifiedOn": 1629734350147
   },
   "creationTag": {
     "versionNumber": 0,
