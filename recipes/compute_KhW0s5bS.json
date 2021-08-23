@@ -102,7 +102,7 @@
     },
     "containerSelection": {
       "containerMode": "EXPLICIT_CONTAINER",
-      "containerConf": "gpu_gke"
+      "containerConf": "gpu_gke_2"
     }
   },
   "customMeta": {
@@ -150,11 +150,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629385336016
+    "lastModifiedOn": 1629732287218
   },
   "creationTag": {
     "versionNumber": 0,
