@@ -12,7 +12,7 @@
       "sampling_method": "last_records",
       "number_records": 10000,
       "prediction_length": 15,
-      "forecasting_style": "auto",
+      "forecasting_style": "choose_algorithms",
       "season_length_min": 1,
       "season_length_H": 24,
       "season_length_D": 7,
@@ -24,7 +24,7 @@
       "season_length_12M": 1,
       "trivial_identity_model_activated": false,
       "seasonal_naive_model_activated": false,
-      "autoarima_model_activated": true,
+      "autoarima_model_activated": false,
       "autoarima_model_kwargs": {
         "seasonal": "True"
       },
@@ -48,7 +48,7 @@
       "transformer_model_kwargs": {
         "model_dim": 32
       },
-      "mqcnn_model_activated": false,
+      "mqcnn_model_activated": true,
       "mqcnn_model_kwargs": {},
       "tft_model_activated": false,
       "tft_model_kwargs": {},
@@ -150,11 +150,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629732287218
+    "lastModifiedOn": 1629732458579
   },
   "creationTag": {
     "versionNumber": 0,
