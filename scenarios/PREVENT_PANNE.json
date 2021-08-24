@@ -1,0 +1,30 @@
+{
+  "projectKey": "LOGSANALYSIS",
+  "id": "PREVENT_PANNE",
+  "type": "step_based",
+  "name": "prevent_panne",
+  "active": false,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "tony"
+    },
+    "lastModifiedOn": 1629811680880
+  },
+  "checklists": {
+    "checklists": []
+  },
+  "delayedTriggersBehavior": {
+    "delayWhileRunning": true,
+    "squashDelayedTriggers": true,
+    "suppressTriggersWhileRunning": true
+  },
+  "tags": [],
+  "triggers": [],
+  "reporters": [],
+  "params": {
+    "steps": []
+  },
+  "automationLocal": false,
+  "customFields": {}
+}
