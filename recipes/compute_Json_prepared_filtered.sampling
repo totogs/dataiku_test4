@@ -5,10 +5,10 @@
       {
         "date": "2021-08-05",
         "input": "date",
-        "col": "date",
+        "col": "Timestamp",
         "unit": "seconds",
         "num": 0,
-        "time": "10:30",
+        "time": "10:35",
         "operator": "\u003e\u003d [date]"
       }
     ]
