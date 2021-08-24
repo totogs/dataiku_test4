@@ -158,4 +158,4 @@ json_config = model_e1d1.to_json()
 model_forecast = dataiku.Folder("dHoUQGRB")
 model_forecast_info = model_forecast.get_info()
 
-model_forecast.write_json()
+model_forecast.write_json("model_json", json_config)
