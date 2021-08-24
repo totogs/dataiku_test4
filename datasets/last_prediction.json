@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629812446371
+    "lastModifiedOn": 1629818549523
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,8 +88,133 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "broker-102/",
+        "type": "float"
+      },
+      {
+        "name": "broker-104/",
+        "type": "float"
+      },
+      {
+        "name": "broker-106/",
+        "type": "float"
+      },
+      {
+        "name": "broker-108/",
+        "type": "float"
+      },
+      {
+        "name": "broker-110/",
+        "type": "float"
+      },
+      {
+        "name": "zook-102/",
+        "type": "float"
+      },
+      {
+        "name": "zook-104/",
+        "type": "float"
+      },
+      {
+        "name": "broker-102/data",
+        "type": "float"
+      },
+      {
+        "name": "broker-104/data",
+        "type": "float"
+      },
+      {
+        "name": "broker-106/data",
+        "type": "float"
+      },
+      {
+        "name": "broker-108/data",
+        "type": "float"
+      },
+      {
+        "name": "broker-110/data",
+        "type": "float"
+      },
+      {
+        "name": "zook-102/data",
+        "type": "float"
+      },
+      {
+        "name": "zook-104/data",
+        "type": "float"
+      },
+      {
+        "name": "broker-101/",
+        "type": "float"
+      },
+      {
+        "name": "broker-103/",
+        "type": "float"
+      },
+      {
+        "name": "broker-105/",
+        "type": "float"
+      },
+      {
+        "name": "broker-107/",
+        "type": "float"
+      },
+      {
+        "name": "broker-109/",
+        "type": "float"
+      },
+      {
+        "name": "zook-101/",
+        "type": "float"
+      },
+      {
+        "name": "zook-103/",
+        "type": "float"
+      },
+      {
+        "name": "zook-105/",
+        "type": "float"
+      },
+      {
+        "name": "broker-101/data",
+        "type": "float"
+      },
+      {
+        "name": "broker-103/data",
+        "type": "float"
+      },
+      {
+        "name": "broker-105/data",
+        "type": "float"
+      },
+      {
+        "name": "broker-107/data",
+        "type": "float"
+      },
+      {
+        "name": "broker-109/data",
+        "type": "float"
+      },
+      {
+        "name": "zook-101/data",
+        "type": "float"
+      },
+      {
+        "name": "zook-103/data",
+        "type": "float"
+      },
+      {
+        "name": "zook-105/data",
+        "type": "float"
+      },
+      {
+        "name": "date",
+        "type": "date"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
