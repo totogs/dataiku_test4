@@ -5,11 +5,11 @@
   "name": "prevent_panne",
   "active": false,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629812066580
+    "lastModifiedOn": 1629820646380
   },
   "checklists": {
     "checklists": []
@@ -44,35 +44,9 @@
   "params": {
     "steps": [
       {
-        "id": "build_2_true_d_Json_prepared",
-        "type": "build_flowitem",
-        "name": "Build_dataset",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
-        "runConditionStatuses": [
-          "SUCCESS",
-          "WARNING"
-        ],
-        "runConditionExpression": "",
-        "resetScenarioStatus": false,
-        "delayBetweenRetries": 10,
-        "maxRetriesOnFail": 0,
-        "params": {
-          "builds": [
-            {
-              "type": "DATASET",
-              "itemId": "Json_prepared",
-              "partitionsSpec": ""
-            }
-          ],
-          "jobType": "RECURSIVE_FORCED_BUILD",
-          "refreshHiveMetastore": true,
-          "proceedOnFailure": false
-        }
-      },
-      {
         "id": "custom_python",
         "type": "custom_python",
-        "name": "Step #2",
+        "name": "generate_data",
         "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
           "SUCCESS",
@@ -83,8 +57,10 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
+          "script": "# -*- coding: utf-8 -*-\nimport dataiku\nimport pandas as pd\n\ndf \u003d pd.DataFrame({\"a\":0})\n# Recipe inputs\ndata \u003d dataiku.Dataset(\"data_generated\")\ndata.write_with_schema(df)",
           "envSelection": {
-            "envMode": "INHERIT"
+            "envMode": "EXPLICIT_ENV",
+            "envName": "asl_alphabet"
           },
           "proceedOnFailure": false
         }
