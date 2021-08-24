@@ -1,4 +1,24 @@
 {
+  "uiData": {
+    "mode": "\u0026\u0026",
+    "conditions": [
+      {
+        "date": "2021-08-05",
+        "input": "date",
+        "col": "date",
+        "unit": "seconds",
+        "num": 0,
+        "time": "10:30",
+        "operator": "\u003e\u003d [date]"
+      }
+    ]
+  },
+  "$status": {
+    "validated": true,
+    "fullyTranslated": false,
+    "ok": false,
+    "message": "Filter expression is invalid"
+  },
   "distinct": false,
-  "enabled": false
+  "enabled": true
 }
