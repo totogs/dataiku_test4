@@ -52,7 +52,7 @@
       "def": {
         "type": "lines",
         "variant": "normal",
-        "name": "Avg. of zook-105/data by date",
+        "name": "Avg. of broker-108/data by date",
         "userEditedName": false,
         "genericDimension0": [
           {
@@ -78,89 +78,12 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of zook-105/data, descending"
+                "label": "Average of broker-108/data, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of zook-105/data, ascending",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 1,
-                "label": "Average of zook-103/data, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 1,
-                "label": "Average of zook-103/data, ascending",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 2,
-                "label": "Average of zook-101/data, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 2,
-                "label": "Average of zook-101/data, ascending",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 3,
-                "label": "Average of broker-107/data, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 3,
-                "label": "Average of broker-107/data, ascending",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 4,
-                "label": "Average of broker-105/data, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 4,
-                "label": "Average of broker-105/data, ascending",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 5,
-                "label": "Average of broker-103/data, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 5,
-                "label": "Average of broker-103/data, ascending",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 6,
-                "label": "Average of broker-101/data, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 6,
-                "label": "Average of broker-101/data, ascending",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 7,
-                "label": "Average of broker-107/data, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 7,
-                "label": "Average of broker-107/data, ascending",
+                "label": "Average of broker-108/data, ascending",
                 "sortAscending": true
               }
             ],
@@ -176,84 +99,7 @@
         "animationDimension": [],
         "genericMeasures": [
           {
-            "column": "zook-105/data",
-            "function": "AVG",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
-          },
-          {
-            "column": "zook-103/data",
-            "function": "AVG",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
-          },
-          {
-            "column": "zook-101/data",
-            "function": "AVG",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
-          },
-          {
-            "column": "broker-107/data",
-            "function": "AVG",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
-          },
-          {
-            "column": "broker-105/data",
-            "function": "AVG",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
-          },
-          {
-            "column": "broker-103/data",
-            "function": "AVG",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
-          },
-          {
-            "column": "broker-101/data",
-            "function": "AVG",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
-          },
-          {
-            "column": "broker-107/data",
+            "column": "broker-108/data",
             "function": "AVG",
             "type": "NUMERICAL",
             "displayed": true,
@@ -341,7 +187,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAsNJREFUaEPtlV9IFEEcx3fs6YSEpD8vBhnhzu5s0kOQEkEP/SGyECIf1Ly9INL+UHeJhyU9hGWK3hUI+hLuHuaDYRAR0R8oKOigHqzbWXcPS8GnIAqitAKdMFnYdNV2mXTA2ceZ+X3n+/1+dlkgrLAHBM07BGGpZFmvgs4v19y8gU0RPpJta7+XMbMI6tLFkweAGl2/XMYXuheLsBfZVrW5RSqRh4fS7rOBCBM9mQbhaMm0EOltl0F1vellACOUjzD+vJSlGKJ4RbHty/Pd6Tswud2yBlQ1fnELdo+2Pa3d1LDnTwF6+zkQrr/5v0J2fWg9U7c53ulZcBF8grLW3oXu9gxM+q5uAJWXPjqDWBSrhKlVWM7itwAA4hZEOmrBYdyIRXgH2dbRdxCWvnwYIacK43+9SomxRCi2MTYRtAizCA7IWevI7PmxgoLQ17y8SWSav5y9rpGW3XWFjc+97vJN2K9hoiXfADW6fXrOFMUHsm0f9NLoHmkdqC2Mzwnk977FzvsOLPfI28yIOThbGGkogVUcc68rmvLYUI197jVLFI8TAF5LlpWZXh+CsFKyrL7FjM58Lsnr5VN3d92LvNhJtBufgHp+7ew5kko8U8CtE/gYHkYaasAqbusebWuaIOOdIZJ72HfgfzHmdUbRlPuGahzy2iNa8r2Q+7NcEFaPgIrT3zzPpDqaQc2FJmdP0ZX+zI+zVULoexzUxJqddecTc2uQVCItCMQQpnLKliywY4DoHYOCkGOCcLTSbao4VbyDTBIpE8loc6j1X1u3dbyvx1CNsiCFo36Ujytm/hZLHjiIYZozPDDNNlnU4oRZpELTEydMs00WtThhFqnQ9MQJ02yTRS1OmEUqND1xwjTbZFGLE2aRCk1PnDDNNlnU4oRZpELTEydMs00WtThhFqnQ9MQJ02yTRS1OmEUqND2tOMK/AUOZ2Z0yE74/AAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAUhJREFUaEPtlL9qwlAYxXMdnQtCrDGjjyJeUnWVPoJDQTQdOrhpIpnsM3StGm7pozgm1mYqFlpwE4uDIOk/c0TMh1/m74TzOz+4QjuzT5wZrwYDmy2/FHjWlNpgMHAc1LDVZObIq7QPkAi42Fb34UA294UybNUTa7EK3crdvplj3yUCPnaZ3/5fvPXrYd96NG1VDRw5PqRH6oHznafLV7cy30LqrYeLyGu8/QO94Vr/dHNSYL3rZ6OutdwUK3TG+otbjXZLGrYazRxZO8RoPHtS4O8Pn98TWib3uXy/WQyvP/4CNduqHAzkc9IxUgWctDxyz8DIapQybJiSLaQrG0ZWo5Rhw5RsIV3ZMLIapQwbpmQL6cqGkdUoZdgwJVtIVzaMrEYpw4Yp2UK6smFkNUoZNkzJFtKVDSOrUcqwYUq2kK5sGFmNUuYLm307KUQUSDYAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
