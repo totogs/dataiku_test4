@@ -53,7 +53,8 @@
     "codeEnvs": {
       "python": {
         "mode": "INHERIT",
-        "preventOverride": false
+        "preventOverride": false,
+        "envName": "asl_alphabet"
       },
       "r": {
         "mode": "INHERIT",
@@ -65,7 +66,8 @@
       }
     },
     "container": {
-      "containerMode": "INHERIT"
+      "containerMode": "EXPLICIT_CONTAINER",
+      "containerConf": "gpu_gke_2"
     },
     "datasetsCreationSettings": {
       "useGlobal": true,
@@ -178,11 +180,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
-      "login": "alexis"
+      "login": "tony"
     },
-    "lastModifiedOn": 1628855267147
+    "lastModifiedOn": 1629798519755
   },
   "creationTag": {
     "versionNumber": 0,
