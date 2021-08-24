@@ -24,7 +24,7 @@
       "season_length_12M": 1,
       "trivial_identity_model_activated": false,
       "seasonal_naive_model_activated": false,
-      "autoarima_model_activated": false,
+      "autoarima_model_activated": true,
       "autoarima_model_kwargs": {
         "seasonal": "True"
       },
@@ -40,7 +40,7 @@
       "simplefeedforward_model_kwargs": {
         "num_hidden_dimensions": "[40, 40]"
       },
-      "deepar_model_activated": true,
+      "deepar_model_activated": false,
       "deepar_model_kwargs": {
         "num_layers": 2
       },
@@ -48,7 +48,7 @@
       "transformer_model_kwargs": {
         "model_dim": 32
       },
-      "mqcnn_model_activated": true,
+      "mqcnn_model_activated": false,
       "mqcnn_model_kwargs": {},
       "tft_model_activated": false,
       "tft_model_kwargs": {},
@@ -150,11 +150,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629733845144
+    "lastModifiedOn": 1629798207099
   },
   "creationTag": {
     "versionNumber": 0,
