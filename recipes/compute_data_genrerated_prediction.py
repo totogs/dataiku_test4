@@ -26,7 +26,6 @@ import time
 import os
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-del data_generated_df["Timestamp"]
 df_cpy  = data_generated_df.set_index('date')
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
@@ -63,9 +62,9 @@ data_pred = data_pred.squeeze()
 df_pred = pd.DataFrame(data_pred, columns=df_cpy.columns)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-lastdate = df["date"].max()
+lastdate = data_generated_df["date"].max()
 listdate = []
-for i in range(len(val)):
+for i in range(len(df_pred)):
     lastdate = lastdate + timedelta(minutes=15)
     listdate.append(lastdate)
     
