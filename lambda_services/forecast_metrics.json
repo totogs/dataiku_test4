@@ -8,9 +8,7 @@
       },
       "testQueries": [
         {
-          "q": {
-            "paramNameToReplace": "paramValueToReplace"
-          }
+          "q": {}
         }
       ],
       "inputFolderRefs": [
