@@ -66,7 +66,7 @@
       "type": "UNIXTimestampParser",
       "params": {
         "inCol": "Timestamp",
-        "milliseconds": true,
+        "milliseconds": false,
         "outCol": "date"
       },
       "alwaysShowComment": false
