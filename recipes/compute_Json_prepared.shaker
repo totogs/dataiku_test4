@@ -46,7 +46,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "FillEmptyWithValue",
@@ -56,6 +56,32 @@
         ],
         "appliesTo": "SINGLE_COLUMN",
         "value": "0.0"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "UNIXTimestampParser",
+      "params": {
+        "inCol": "Timestamp",
+        "milliseconds": true,
+        "outCol": "date"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "Timestamp"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
     }
