@@ -5,11 +5,11 @@
   "name": "prevent_panne",
   "active": false,
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629879506145
+    "lastModifiedOn": 1629881169544
   },
   "checklists": {
     "checklists": []
@@ -62,9 +62,14 @@
               "type": "DATASET",
               "itemId": "data_generated",
               "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "data_genrerated_prediction",
+              "partitionsSpec": ""
             }
           ],
-          "jobType": "RECURSIVE_BUILD",
+          "jobType": "RECURSIVE_FORCED_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }
