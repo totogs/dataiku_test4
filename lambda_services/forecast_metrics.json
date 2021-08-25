@@ -6,7 +6,11 @@
         "envMode": "EXPLICIT_ENV",
         "envName": "asl_alphabet"
       },
-      "testQueries": [],
+      "testQueries": [
+        {
+          "q": {}
+        }
+      ],
       "inputFolderRefs": [
         {
           "ref": "7ZpiA3gk"
