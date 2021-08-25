@@ -1,5 +1,5 @@
 {
-  "type": "Filesystem",
+  "type": "MongoDB",
   "managed": true,
   "formatType": "csv",
   "checklists": {
@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "tony"
+      "login": "khalil"
     },
-    "lastModifiedOn": 1629883182838
+    "lastModifiedOn": 1629897365243
   },
   "creationTag": {
     "versionNumber": 0,
@@ -74,15 +74,15 @@
   },
   "tags": [],
   "params": {
-    "connection": "filesystem_managed",
-    "path": "${projectKey}/data_genrerated_prediction",
+    "connection": "MongoDB",
     "notReadyIfEmpty": false,
-    "filesSelectionRules": {
-      "mode": "ALL",
-      "excludeRules": [],
-      "includeRules": [],
-      "explicitFiles": []
-    }
+    "collection": "data_genrerated_prediction",
+    "importIds": false,
+    "strictInputFormat": false,
+    "strictOutputFormat": false,
+    "partitioned": false,
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING"
   },
   "schema": {
     "columns": [
@@ -211,7 +211,7 @@
         "type": "date"
       }
     ],
-    "userModified": false
+    "userModified": true
   },
   "dkuProperties": [],
   "metrics": {
