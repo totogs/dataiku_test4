@@ -5,7 +5,7 @@ import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
 # Read recipe inputs
-json_prepared = dataiku.Dataset("json_stacked_distinct")
+json_prepared = dataiku.Dataset("Json_prepared")
 df = json_prepared.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
@@ -26,11 +26,6 @@ import time
 import os
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-df.head()
-
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-
 # Split into training, validation and test datasets.
 # Since it's timeseries we should do it by date.
 test_cutoff_date = df['date'].max() - timedelta(days=7)
@@ -45,9 +40,6 @@ print('Train dates: {} to {}'.format(train_df['date'].min(), train_df['date'].ma
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 train_df  = train_df.set_index('date')
 test_df = test_df.set_index('date')
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-train_df.head()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 train = train_df
@@ -69,9 +61,9 @@ for i in test_df.columns:
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 def split_series(series, n_past, n_future):
   #
-  # n_past ==> no of past observations  
+  # n_past ==> no of past observations
   #
-  # n_future ==> no of future observations 
+  # n_future ==> no of future observations
   #
   X, y = list(), list()
   for window_start in range(len(series)):
@@ -87,7 +79,7 @@ def split_series(series, n_past, n_future):
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 n_past = 10
-n_future = 5 
+n_future = 5
 n_features = 30
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
@@ -113,45 +105,27 @@ decoder_l1 = tf.keras.layers.LSTM(100, return_sequences=True)(decoder_inputs,ini
 decoder_outputs1 = tf.keras.layers.TimeDistributed(tf.keras.layers.Dense(n_features))(decoder_l1)
 
 #
-model_e1d1 = tf.keras.models.Model(encoder_inputs,decoder_outputs1)
+model = tf.keras.models.Model(encoder_inputs,decoder_outputs1)
 
 #
-model_e1d1.summary()
+model.summary()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 reduce_lr = tf.keras.callbacks.LearningRateScheduler(lambda x: 1e-3 * 0.90 ** x)
-model_e1d1.compile(optimizer=tf.keras.optimizers.Adam(), loss=tf.keras.losses.Huber())
-history_e1d1=model_e1d1.fit(X_train,y_train,epochs=25,validation_data=(X_test,y_test),batch_size=32,verbose=0,callbacks=[reduce_lr])
+model.compile(optimizer=tf.keras.optimizers.Adam(), loss=tf.keras.losses.Huber())
+history = model.fit(X_train,y_train,epochs=25,validation_data=(X_test,y_test),batch_size=32,verbose=0,callbacks=[reduce_lr])
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-pred_e1d1=model_e1d1.predict(X_test)
+y_pred=model.predict(X_test)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 for index,i in enumerate(train_df.columns):
     scaler = scalers['scaler_'+i]
-    pred_e1d1[:,:,index]=scaler.inverse_transform(pred_e1d1[:,:,index])
+    y_pred[:,:,index]=scaler.inverse_transform(y_pred[:,:,index])
     y_train[:,:,index]=scaler.inverse_transform(y_train[:,:,index])
     y_test[:,:,index]=scaler.inverse_transform(y_test[:,:,index])
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-pred_e1d1
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-X_test.shape
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-y_test.shape
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-pred_e1d1.shape
-
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-json_config = model_e1d1.to_json()
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-
-
 # Write recipe outputs
 model_forecast = dataiku.Folder("dHoUQGRB")
 model_forecast_info = model_forecast.get_info()
