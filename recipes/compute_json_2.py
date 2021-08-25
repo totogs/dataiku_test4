@@ -1,12 +1,13 @@
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # -*- coding: utf-8 -*-
 import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
+import json
 
 # Read recipe inputs
 disk_usage_25_08 = dataiku.Dataset("disk_usage_25_08")
 df = disk_usage_25_08.get_dataframe()
-
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 df.info()
