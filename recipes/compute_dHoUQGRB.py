@@ -5,7 +5,7 @@ import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
 # Read recipe inputs
-json_prepared = dataiku.Dataset("Json_prepared")
+json_prepared = dataiku.Dataset("json_stacked_distinct")
 df = json_prepared.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
@@ -126,8 +126,11 @@ for index,i in enumerate(train_df.columns):
     y_test[:,:,index]=scaler.inverse_transform(y_test[:,:,index])
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+model_json = model.to_json()
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
 model_forecast = dataiku.Folder("dHoUQGRB")
 model_forecast_info = model_forecast.get_info()
 
-model_forecast.write_json("model_json", json_config)
+model_forecast.write_json("model_json", model_json)
