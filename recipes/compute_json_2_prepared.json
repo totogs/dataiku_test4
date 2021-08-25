@@ -8,7 +8,11 @@
         "readParams": {
           "mode": "AUTO",
           "autoModeRepartitionInto": 10,
-          "map": {}
+          "map": {
+            "json_2": {
+              "repartition": 10
+            }
+          }
         },
         "useGlobalMetastore": false,
         "useNativeProcessors": true,
@@ -68,11 +72,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629884440898
+    "lastModifiedOn": 1629884552030
   },
   "creationTag": {
     "versionNumber": 0,
