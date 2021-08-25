@@ -22,7 +22,7 @@ random_index = random.randint(0,max_index)
 df_generated = df[random_index:random_index+10]
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-actualdate = df_generated["date"].max()
+actualdate = df["date"].max()
 listdate = []
 for i in range(len(df_generated)):
     actualdate = actualdate + timedelta(minutes=15)
