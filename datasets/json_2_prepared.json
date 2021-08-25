@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629884440894
+    "lastModifiedOn": 1629884551733
   },
   "creationTag": {
     "versionNumber": 0,
@@ -90,8 +90,8 @@
   "schema": {
     "columns": [
       {
-        "name": "Timestamp",
-        "type": "bigint"
+        "name": "date",
+        "type": "date"
       },
       {
         "name": "broker-102/",
