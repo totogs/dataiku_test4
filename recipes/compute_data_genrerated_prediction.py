@@ -26,8 +26,8 @@ import time
 import os
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-del df['Timestamp']
-df_cpy  = df.set_index('date')
+del data_generated_df["Timestamp"]
+df_cpy  = data_generated_df.set_index('date')
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 data = df_cpy
@@ -37,7 +37,7 @@ for i in df_cpy.columns:
     s_s = scaler.fit_transform(data[i].values.reshape(-1,1))
     s_s=np.reshape(s_s,len(s_s))
     scalers['scaler_'+ i] = scaler
-    data_to_pred[i]=s_s
+    data[i]=s_s
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 data_to_pred = data.values
