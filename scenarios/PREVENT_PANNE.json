@@ -5,11 +5,11 @@
   "name": "prevent_panne",
   "active": false,
   "versionTag": {
-    "versionNumber": 21,
+    "versionNumber": 22,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629896227773
+    "lastModifiedOn": 1629896238665
   },
   "checklists": {
     "checklists": []
@@ -65,6 +65,32 @@
         }
       },
       {
+        "id": "build_0_true_d_data_genrerated_prediction",
+        "type": "build_flowitem",
+        "name": "prediction_generated",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "data_genrerated_prediction",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
         "id": "custom_python_hAmYJ8S1/U5k9vZ/x9jqAg",
         "type": "custom_python",
         "name": "add data to json stacked",
@@ -112,32 +138,6 @@
             }
           ],
           "jobType": "NON_RECURSIVE_FORCED_BUILD",
-          "refreshHiveMetastore": true,
-          "proceedOnFailure": false
-        }
-      },
-      {
-        "id": "build_0_true_d_data_genrerated_prediction",
-        "type": "build_flowitem",
-        "name": "prediction_generated",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
-        "runConditionStatuses": [
-          "SUCCESS",
-          "WARNING"
-        ],
-        "runConditionExpression": "",
-        "resetScenarioStatus": false,
-        "delayBetweenRetries": 10,
-        "maxRetriesOnFail": 0,
-        "params": {
-          "builds": [
-            {
-              "type": "DATASET",
-              "itemId": "data_genrerated_prediction",
-              "partitionsSpec": ""
-            }
-          ],
-          "jobType": "RECURSIVE_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }
