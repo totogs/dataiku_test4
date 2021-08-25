@@ -5,11 +5,11 @@
   "name": "prevent_panne",
   "active": true,
   "versionTag": {
-    "versionNumber": 34,
+    "versionNumber": 35,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629904933113
+    "lastModifiedOn": 1629905016835
   },
   "checklists": {
     "checklists": []
@@ -130,7 +130,28 @@
               "type": "DATASET",
               "itemId": "json_stacked_distinct",
               "partitionsSpec": ""
-            },
+            }
+          ],
+          "jobType": "NON_RECURSIVE_FORCED_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "build_1_true_f_dHoUQGRB",
+        "type": "build_flowitem",
+        "name": "Step #5",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
             {
               "type": "MANAGED_FOLDER",
               "itemId": "dHoUQGRB",
