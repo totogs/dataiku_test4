@@ -5,11 +5,11 @@
   "name": "prevent_panne",
   "active": true,
   "versionTag": {
-    "versionNumber": 28,
+    "versionNumber": 29,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629903954028
+    "lastModifiedOn": 1629904075610
   },
   "checklists": {
     "checklists": []
@@ -85,7 +85,7 @@
               "partitionsSpec": ""
             }
           ],
-          "jobType": "RECURSIVE_BUILD",
+          "jobType": "NON_RECURSIVE_FORCED_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }
@@ -130,35 +130,14 @@
               "type": "DATASET",
               "itemId": "json_stacked_distinct",
               "partitionsSpec": ""
-            }
-          ],
-          "jobType": "NON_RECURSIVE_FORCED_BUILD",
-          "refreshHiveMetastore": true,
-          "proceedOnFailure": false
-        }
-      },
-      {
-        "id": "build_0_true_f_dHoUQGRB",
-        "type": "build_flowitem",
-        "name": "Step #5",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
-        "runConditionStatuses": [
-          "SUCCESS",
-          "WARNING"
-        ],
-        "runConditionExpression": "",
-        "resetScenarioStatus": false,
-        "delayBetweenRetries": 10,
-        "maxRetriesOnFail": 0,
-        "params": {
-          "builds": [
+            },
             {
               "type": "MANAGED_FOLDER",
               "itemId": "dHoUQGRB",
               "partitionsSpec": ""
             }
           ],
-          "jobType": "RECURSIVE_BUILD",
+          "jobType": "NON_RECURSIVE_FORCED_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }
