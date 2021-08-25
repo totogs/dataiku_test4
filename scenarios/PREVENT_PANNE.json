@@ -5,11 +5,11 @@
   "name": "prevent_panne",
   "active": false,
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629885864369
+    "lastModifiedOn": 1629886172207
   },
   "checklists": {
     "checklists": []
@@ -28,7 +28,7 @@
       "delay": 5,
       "active": true,
       "params": {
-        "repeatFrequency": 15,
+        "repeatFrequency": 150,
         "frequency": "Minutely",
         "startingFrom": "2021-08-24T13:29:00.000Z",
         "daysOfWeek": [
@@ -92,6 +92,37 @@
           "envSelection": {
             "envMode": "INHERIT"
           },
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "build_0_true_d_json_stacked_distinct_f_dHoUQGRB",
+        "type": "build_flowitem",
+        "name": "Retrain model",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "json_stacked_distinct",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "MANAGED_FOLDER",
+              "itemId": "dHoUQGRB",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }
       }
