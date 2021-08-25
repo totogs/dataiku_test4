@@ -63,14 +63,15 @@ data_pred = data_pred.squeeze()
 df_pred = pd.DataFrame(data_pred, columns=df_cpy.columns)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+lastdate = df["date"].max()
+listdate = []
+for i in range(len(val)):
+    lastdate = lastdate + timedelta(minutes=15)
+    listdate.append(lastdate)
+    
+df_pred["date"] = listdate
 
-# Compute recipe outputs from inputs
-# TODO: Replace this part by your actual code that computes the output, as a Pandas dataframe
-# NB: DSS also supports other kinds of APIs for reading and writing data. Please see doc.
-
-data_genrerated_prediction_df = data_generated_df # For this sample code, simply copy input to output
-
-
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
 data_genrerated_prediction = dataiku.Dataset("data_genrerated_prediction")
-data_genrerated_prediction.write_with_schema(data_genrerated_prediction_df)
+data_genrerated_prediction.write_with_schema(df_pred)
