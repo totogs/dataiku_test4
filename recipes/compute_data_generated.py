@@ -11,6 +11,7 @@ df = json_prepared.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 from datetime import timedelta
+from datetime import datetime
 import random
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
@@ -21,11 +22,15 @@ random_index = random.randint(0,max_index)
 df_generated = df[random_index:random_index+10]
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-actualdate = datetime
-print(lastdate)
-for i in range(len(val)):
-    lastdate = lastdate + timedelta(minutes=15)
-    df.append()
+actualdate = df_generated["date"].max()
+listdate = []
+for i in range(len(df_generated)):
+    actualdate = actualdate + timedelta(minutes=15)
+    listdate.append(actualdate)
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+listdate.reverse()
+df_generated["date"] = listdate
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 df_generated
@@ -35,9 +40,7 @@ df_generated
 # TODO: Write here your actual code that computes the outputs
 # NB: DSS supports several kinds of APIs for reading and writing data. Please see doc.
 
-data_generated_df = ... # Compute a Pandas dataframe to write into data_generated
-
 
 # Write recipe outputs
 data_generated = dataiku.Dataset("data_generated")
-data_generated.write_with_schema(data_generated_df)
+data_generated.write_with_schema(df_generated)
