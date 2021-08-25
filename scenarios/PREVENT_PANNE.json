@@ -5,11 +5,11 @@
   "name": "prevent_panne",
   "active": true,
   "versionTag": {
-    "versionNumber": 31,
+    "versionNumber": 32,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629904351519
+    "lastModifiedOn": 1629904563396
   },
   "checklists": {
     "checklists": []
@@ -85,7 +85,7 @@
               "partitionsSpec": ""
             }
           ],
-          "jobType": "NON_RECURSIVE_FORCED_BUILD",
+          "jobType": "RECURSIVE_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }
