@@ -23,7 +23,7 @@
     }
   },
   "formatParams": {
-    "maxExpansionDepth": -1,
+    "maxExpansionDepth": 1,
     "nestedArraysHandling": "PRESERVE",
     "extractFromSingleElement": false,
     "nestedArraysMaxElements": 100,
@@ -36,11 +36,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629883398031
+    "lastModifiedOn": 1629883461474
   },
   "creationTag": {
     "versionNumber": 0,
