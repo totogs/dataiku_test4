@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "tony"
+      "login": "khalil"
     },
-    "lastModifiedOn": 1629879269646
+    "lastModifiedOn": 1629885523455
   },
   "creationTag": {
     "versionNumber": 0,
@@ -86,10 +86,6 @@
   },
   "schema": {
     "columns": [
-      {
-        "name": "Timestamp",
-        "type": "bigint"
-      },
       {
         "name": "date",
         "type": "date"
