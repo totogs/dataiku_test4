@@ -44,7 +44,7 @@ data_to_pred = data_to_pred.reshape((1, data_to_pred.shape[0],data_to_pred.shape
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 handle = dataiku.Folder("model_forecast")
-json_config = handle.read_json("model_json")
+json_config = handle.read_json("actual/model_json")
 model = keras.models.model_from_json(json_config)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
