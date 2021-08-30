@@ -162,12 +162,13 @@ model_folder.write_json(str(now)+"/model_json", model_json)
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 model_folder.list_paths_in_partition()
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
+# # Stockage des métriques dans un dataframe
+
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 metrics = dataiku.Dataset("Metrics")
 
 data_metrics['time'] = [now]
+data_metrics["used"] = ["False"]
 df_metrics = pd.DataFrame(data_metrics)
 metrics.write_with_schema(df_metrics)
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-metrics.list()
