@@ -134,7 +134,7 @@ history.history["val_mean_absolute_error"]
 data_metrics = {}
 
 for key, val in history.history.items():
-    data_metrics[key] = val[-1]
+    data_metrics[key] = [val[-1]]
     
 print(data_metrics)
 
@@ -165,7 +165,7 @@ model_folder.list_paths_in_partition()
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 metrics = dataiku.Dataset("Metrics")
 
-data_metrics['time'] = now
+data_metrics['time'] = [now]
 df_metrics = pd.DataFrame(data_metrics)
 metrics.write_with_schema(df_metrics)
 
