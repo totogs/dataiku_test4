@@ -167,12 +167,9 @@ model_folder.list_paths_in_partition()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 metrics = dataiku.Dataset("Metrics")
-df_all_metrics = metrics.get_dataframe()
 
 data_metrics['time'] = [now]
 data_metrics["used"] = ["False"]
 df_metrics = pd.DataFrame(data_metrics)
 
-df_all_metrics = df_all_metrics.append(df_metrics)
-
-metrics.write_with_schema(df_all_metrics)
+metrics.write_with_schema(df_metrics)
