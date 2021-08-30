@@ -26,10 +26,6 @@
         {
           "ref": "data_distinct",
           "deps": []
-        },
-        {
-          "ref": "Metrics",
-          "deps": []
         }
       ]
     }
@@ -43,18 +39,18 @@
         },
         {
           "ref": "Metrics",
-          "appendMode": false
+          "appendMode": true
         }
       ]
     }
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 49,
+    "versionNumber": 50,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1630339521736
+    "lastModifiedOn": 1630339528683
   },
   "creationTag": {
     "versionNumber": 0,
