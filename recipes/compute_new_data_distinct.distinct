@@ -6,36 +6,6 @@
   "keys": [
     {
       "column": "date"
-    },
-    {
-      "column": "broker-102/data"
-    },
-    {
-      "column": "broker-104/data"
-    },
-    {
-      "column": "broker-106/data"
-    },
-    {
-      "column": "broker-108/data"
-    },
-    {
-      "column": "broker-110/data"
-    },
-    {
-      "column": "broker-101/data"
-    },
-    {
-      "column": "broker-103/data"
-    },
-    {
-      "column": "broker-105/data"
-    },
-    {
-      "column": "broker-107/data"
-    },
-    {
-      "column": "broker-109/data"
     }
   ],
   "globalCount": false,
@@ -75,6 +45,17 @@
   },
   "outputColumnNameOverrides": {},
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "date",
+            "type": "date"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }
