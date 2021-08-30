@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629884551733
+    "lastModifiedOn": 1630332079118
   },
   "creationTag": {
     "versionNumber": 0,
@@ -94,34 +94,6 @@
         "type": "date"
       },
       {
-        "name": "broker-102/",
-        "type": "double"
-      },
-      {
-        "name": "broker-104/",
-        "type": "double"
-      },
-      {
-        "name": "broker-106/",
-        "type": "double"
-      },
-      {
-        "name": "broker-108/",
-        "type": "double"
-      },
-      {
-        "name": "broker-110/",
-        "type": "double"
-      },
-      {
-        "name": "zook-102/",
-        "type": "double"
-      },
-      {
-        "name": "zook-104/",
-        "type": "double"
-      },
-      {
         "name": "broker-102/data",
         "type": "double"
       },
@@ -142,46 +114,6 @@
         "type": "double"
       },
       {
-        "name": "zook-102/data",
-        "type": "double"
-      },
-      {
-        "name": "zook-104/data",
-        "type": "double"
-      },
-      {
-        "name": "broker-101/",
-        "type": "double"
-      },
-      {
-        "name": "broker-103/",
-        "type": "double"
-      },
-      {
-        "name": "broker-105/",
-        "type": "double"
-      },
-      {
-        "name": "broker-107/",
-        "type": "double"
-      },
-      {
-        "name": "broker-109/",
-        "type": "double"
-      },
-      {
-        "name": "zook-101/",
-        "type": "double"
-      },
-      {
-        "name": "zook-103/",
-        "type": "double"
-      },
-      {
-        "name": "zook-105/",
-        "type": "double"
-      },
-      {
         "name": "broker-101/data",
         "type": "double"
       },
@@ -199,18 +131,6 @@
       },
       {
         "name": "broker-109/data",
-        "type": "double"
-      },
-      {
-        "name": "zook-101/data",
-        "type": "double"
-      },
-      {
-        "name": "zook-103/data",
-        "type": "double"
-      },
-      {
-        "name": "zook-105/data",
         "type": "double"
       }
     ],
