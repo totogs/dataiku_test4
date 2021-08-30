@@ -1,30 +1,3 @@
-# -*- coding: utf-8 -*-
-import dataiku
-import pandas as pd, numpy as np
-from dataiku import pandasutils as pdu
-
-# Read recipe inputs
-new_train_data = dataiku.Dataset("new_train_data")
-new_train_data_df = new_train_data.get_dataframe()
-
-model_forecast = dataiku.Folder("dHoUQGRB")
-model_forecast_info = model_forecast.get_info()
-
-metrics = dataiku.Dataset("Metrics")
-metrics_df = metrics.get_dataframe()
-
-
-# Compute recipe outputs
-# TODO: Write here your actual code that computes the outputs
-# NB: DSS supports several kinds of APIs for reading and writing data. Please see doc.
-
-new_pred_df = ... # Compute a Pandas dataframe to write into new_pred
-
-
-# Write recipe outputs
-new_pred = dataiku.Dataset("new_pred")
-new_pred.write_with_schema(new_pred_df)
-
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # -*- coding: utf-8 -*-
@@ -33,7 +6,7 @@ import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
 # Read recipe inputs
-json_prepared = dataiku.Dataset("data_distinct")
+json_prepared = dataiku.Dataset("new_train_data")
 df = json_prepared.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
