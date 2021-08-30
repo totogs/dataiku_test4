@@ -169,7 +169,7 @@ model_folder.list_paths_in_partition()
 metrics = dataiku.Dataset("Metrics")
 
 data_metrics['time'] = [now]
-data_metrics["used"] = ["False"]
+data_metrics["used"] = ["True"]
 df_metrics = pd.DataFrame(data_metrics)
 
 metrics.write_with_schema(df_metrics)
