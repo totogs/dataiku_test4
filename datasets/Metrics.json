@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1630338672673
+    "lastModifiedOn": 1630338784197
   },
   "creationTag": {
     "versionNumber": 0,
@@ -90,11 +90,35 @@
   "schema": {
     "columns": [
       {
-        "name": "time",
+        "name": "loss",
         "type": "double"
       },
       {
         "name": "cosine_similarity",
+        "type": "double"
+      },
+      {
+        "name": "mean_absolute_error",
+        "type": "double"
+      },
+      {
+        "name": "val_loss",
+        "type": "double"
+      },
+      {
+        "name": "val_cosine_similarity",
+        "type": "double"
+      },
+      {
+        "name": "val_mean_absolute_error",
+        "type": "double"
+      },
+      {
+        "name": "lr",
+        "type": "double"
+      },
+      {
+        "name": "time",
         "type": "double"
       }
     ],
