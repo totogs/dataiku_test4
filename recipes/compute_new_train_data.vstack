@@ -56,9 +56,65 @@
       },
       "originLabel": "data_distinct",
       "index": 0
+    },
+    {
+      "preFilter": {},
+      "originLabel": "new_data_distinct",
+      "index": 1
     }
   ],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "date",
+            "type": "date"
+          },
+          {
+            "name": "broker-102/data",
+            "type": "double"
+          },
+          {
+            "name": "broker-104/data",
+            "type": "double"
+          },
+          {
+            "name": "broker-106/data",
+            "type": "double"
+          },
+          {
+            "name": "broker-108/data",
+            "type": "double"
+          },
+          {
+            "name": "broker-110/data",
+            "type": "double"
+          },
+          {
+            "name": "broker-101/data",
+            "type": "double"
+          },
+          {
+            "name": "broker-103/data",
+            "type": "double"
+          },
+          {
+            "name": "broker-105/data",
+            "type": "double"
+          },
+          {
+            "name": "broker-107/data",
+            "type": "double"
+          },
+          {
+            "name": "broker-109/data",
+            "type": "double"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },

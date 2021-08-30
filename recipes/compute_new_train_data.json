@@ -15,6 +15,10 @@
         {
           "ref": "data_distinct",
           "deps": []
+        },
+        {
+          "ref": "new_data_distinct",
+          "deps": []
         }
       ]
     }
@@ -31,11 +35,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1630343994173
+    "lastModifiedOn": 1630344009892
   },
   "creationTag": {
     "versionNumber": 0,
