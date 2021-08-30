@@ -78,10 +78,30 @@
       "type": "ColumnsSelector",
       "params": {
         "columns": [
+          "zook-105/data",
+          "zook-103/data",
+          "zook-101/data",
+          "zook-104/data",
+          "zook-102/data",
+          "zook-105/",
+          "zook-103/",
+          "zook-101/",
+          "broker-109/",
+          "broker-107/",
+          "broker-105/",
+          "broker-103/",
+          "broker-101/",
+          "zook-104/",
+          "zook-102/",
+          "broker-110/",
+          "broker-108/",
+          "broker-106/",
+          "broker-104/",
+          "broker-102/",
           "Timestamp"
         ],
         "keep": false,
-        "appliesTo": "SINGLE_COLUMN"
+        "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
     }
