@@ -5,11 +5,11 @@
   "name": "prevent_panne",
   "active": false,
   "versionTag": {
-    "versionNumber": 50,
+    "versionNumber": 51,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1630341205390
+    "lastModifiedOn": 1630341754840
   },
   "checklists": {
     "checklists": []
@@ -44,31 +44,10 @@
   "params": {
     "steps": [
       {
-        "id": "custom_python_ZZ5bA39xVocFgzAZAx/XEw",
-        "type": "custom_python",
-        "name": "generate_data",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
-        "runConditionStatuses": [
-          "SUCCESS",
-          "WARNING"
-        ],
-        "runConditionExpression": "",
-        "resetScenarioStatus": false,
-        "delayBetweenRetries": 10,
-        "maxRetriesOnFail": 0,
-        "params": {
-          "script": "# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE\n# -*- coding: utf-8 -*-\nimport dataiku\nimport pandas as pd, numpy as np\nfrom dataiku import pandasutils as pdu\n\n\n# Read recipe inputs\ndata \u003d dataiku.Dataset(\"data_distinct\")\ndf_data \u003d data.get_dataframe()\n\n# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE\nfrom datetime import timedelta\nfrom datetime import datetime\nimport random\n\n# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE\nmax_index \u003d len(df_data)-10\nrandom_index \u003d random.randint(0,max_index)\n\n# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE\ndf_generated \u003d df_data[random_index:random_index+10]\n\n# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE\nactualdate \u003d df_data[\"date\"].max()\nlistdate \u003d []\nfor i in range(len(df_generated)):\n    actualdate \u003d actualdate + timedelta(minutes\u003d15)\n    listdate.append(actualdate)\n\n# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE\nlistdate.reverse()\ndf_generated[\"date\"] \u003d listdate\n\n# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE\ndf_generated\n\n# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE\n# Compute recipe outputs\n# TODO: Write here your actual code that computes the outputs\n# NB: DSS supports several kinds of APIs for reading and writing data. Please see doc.\n\n\n# Write recipe outputs\ndata_generated \u003d dataiku.Dataset(\"data_generated\")\ndata_generated.write_with_schema(df_generated)",
-          "envSelection": {
-            "envMode": "INHERIT"
-          },
-          "proceedOnFailure": false
-        }
-      },
-      {
         "id": "build_0_true_d_data_genrerated_prediction",
         "type": "build_flowitem",
         "name": "prediction_generated",
-        "runConditionType": "DISABLED",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
           "SUCCESS",
           "WARNING"
@@ -94,7 +73,7 @@
         "id": "custom_python_hAmYJ8S1/U5k9vZ/x9jqAg",
         "type": "custom_python",
         "name": "add data to json stacked",
-        "runConditionType": "DISABLED",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
           "SUCCESS",
           "WARNING"
@@ -115,7 +94,7 @@
         "id": "build_0_true_d_json_stacked_distinct_f_dHoUQGRB",
         "type": "build_flowitem",
         "name": "Retrain model",
-        "runConditionType": "DISABLED",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
           "SUCCESS",
           "WARNING"
@@ -135,7 +114,7 @@
         "id": "build_1_true_f_dHoUQGRB",
         "type": "build_flowitem",
         "name": "Step #5",
-        "runConditionType": "DISABLED",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
           "SUCCESS",
           "WARNING"
