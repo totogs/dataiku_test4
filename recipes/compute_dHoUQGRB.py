@@ -5,7 +5,7 @@ import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
 # Read recipe inputs
-json_prepared = dataiku.Dataset("data_distinct")
+json_prepared = dataiku.Dataset("json_stacked_distinct")
 df = json_prepared.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
@@ -25,8 +25,11 @@ import time
 
 import os
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
+# # Split en dataset de Train et Test
+
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-# Split into training, validation and test datasets.
+# Split into training, test datasets.
 # Since it's timeseries we should do it by date.
 test_cutoff_date = df['date'].max() - timedelta(days=7)
 
@@ -57,6 +60,9 @@ for i in test_df.columns:
     s_s=np.reshape(s_s,len(s_s))
     scalers['scaler_'+i] = scaler
     test[i]=s_s
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
+# # Construction des mini-batch
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 def split_series(series, n_past, n_future):
@@ -90,30 +96,43 @@ X_test, y_test = split_series(test.values,n_past, n_future)
 X_test = X_test.reshape((X_test.shape[0], X_test.shape[1],n_features))
 y_test = y_test.reshape((y_test.shape[0], y_test.shape[1], n_features))
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
+# # Création du modèle de forecasting
+
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 encoder_inputs = tf.keras.layers.Input(shape=(n_past, n_features))
-encoder_l1 = tf.keras.layers.LSTM(100, return_state=True)
-encoder_outputs1 = encoder_l1(encoder_inputs)
+encoder = tf.keras.layers.LSTM(100, return_state=True)
+encoder_outputs = encoder(encoder_inputs)
 
-encoder_states1 = encoder_outputs1[1:]
-
-#
-decoder_inputs = tf.keras.layers.RepeatVector(n_future)(encoder_outputs1[0])
+encoder_states = encoder_outputs[1:]
 
 #
-decoder_l1 = tf.keras.layers.LSTM(100, return_sequences=True)(decoder_inputs,initial_state = encoder_states1)
-decoder_outputs1 = tf.keras.layers.TimeDistributed(tf.keras.layers.Dense(n_features))(decoder_l1)
+decoder_inputs = tf.keras.layers.RepeatVector(n_future)(encoder_outputs[0])
 
 #
-model = tf.keras.models.Model(encoder_inputs,decoder_outputs1)
+decoder = tf.keras.layers.LSTM(100, return_sequences=True)(decoder_inputs,initial_state = encoder_states)
+decoder_outputs = tf.keras.layers.TimeDistributed(tf.keras.layers.Dense(n_features))(decoder)
+
+#
+model = tf.keras.models.Model(encoder_inputs,decoder_outputs)
 
 #
 model.summary()
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
+# # Apprentissage du modèle
+
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 reduce_lr = tf.keras.callbacks.LearningRateScheduler(lambda x: 1e-3 * 0.90 ** x)
-model.compile(optimizer=tf.keras.optimizers.Adam(), loss=tf.keras.losses.Huber())
+model.compile(optimizer=tf.keras.optimizers.Adam(), loss=tf.keras.losses.Huber(), metrics=[tf.keras.metrics.MeanAbsoluteError()])
 history = model.fit(X_train,y_train,epochs=25,validation_data=(X_test,y_test),batch_size=32,verbose=0,callbacks=[reduce_lr])
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+print(history.history.keys())
+history.history["mean_absolute_error"]
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
+# # Prédiction sur les données de test
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 y_pred=model.predict(X_test)
@@ -124,6 +143,9 @@ for index,i in enumerate(train_df.columns):
     y_pred[:,:,index]=scaler.inverse_transform(y_pred[:,:,index])
     y_train[:,:,index]=scaler.inverse_transform(y_train[:,:,index])
     y_test[:,:,index]=scaler.inverse_transform(y_test[:,:,index])
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
+# # Stockage du modèle dans le folder
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 model_json = model.to_json()
