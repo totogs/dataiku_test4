@@ -5,11 +5,11 @@
   "name": "prevent_panne",
   "active": false,
   "versionTag": {
-    "versionNumber": 39,
+    "versionNumber": 40,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1630334857180
+    "lastModifiedOn": 1630341045037
   },
   "checklists": {
     "checklists": []
@@ -68,7 +68,7 @@
         "id": "build_0_true_d_data_genrerated_prediction",
         "type": "build_flowitem",
         "name": "prediction_generated",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionType": "DISABLED",
         "runConditionStatuses": [
           "SUCCESS",
           "WARNING"
@@ -94,7 +94,7 @@
         "id": "custom_python_hAmYJ8S1/U5k9vZ/x9jqAg",
         "type": "custom_python",
         "name": "add data to json stacked",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionType": "DISABLED",
         "runConditionStatuses": [
           "SUCCESS",
           "WARNING"
@@ -115,7 +115,7 @@
         "id": "build_0_true_d_json_stacked_distinct_f_dHoUQGRB",
         "type": "build_flowitem",
         "name": "Retrain model",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionType": "DISABLED",
         "runConditionStatuses": [
           "SUCCESS",
           "WARNING"
@@ -135,7 +135,7 @@
         "id": "build_1_true_f_dHoUQGRB",
         "type": "build_flowitem",
         "name": "Step #5",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionType": "DISABLED",
         "runConditionStatuses": [
           "SUCCESS",
           "WARNING"
