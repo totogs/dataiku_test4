@@ -1,6 +1,6 @@
 {
   "preFilter": {
-    "distinct": false,
+    "distinct": true,
     "enabled": false
   },
   "engineParams": {
@@ -39,7 +39,12 @@
   },
   "rank": false,
   "denseRank": false,
-  "orders": [],
+  "orders": [
+    {
+      "column": "date",
+      "desc": true
+    }
+  ],
   "rowNumber": false,
   "outputColumnNameOverrides": {},
   "computedColumns": []
