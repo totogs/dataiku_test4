@@ -5,7 +5,7 @@ import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
 # Read recipe inputs
-json_prepared = dataiku.Dataset("json_stacked_distinct")
+json_prepared = dataiku.Dataset("data_distinct")
 df = json_prepared.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
