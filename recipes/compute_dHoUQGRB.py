@@ -158,6 +158,7 @@ model_folder_info = model_folder.get_info()
 now = time.time()
 
 model_folder.write_json(str(now)+"/model_json", model_json)
+model_folder.write_json("actual/model_json", model_json)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 model_folder.list_paths_in_partition()
