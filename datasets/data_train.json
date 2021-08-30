@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1630323927630
+    "lastModifiedOn": 1630324535785
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,7 +88,132 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "date",
+        "type": "date"
+      },
+      {
+        "name": "broker-102/",
+        "type": "double"
+      },
+      {
+        "name": "broker-104/",
+        "type": "double"
+      },
+      {
+        "name": "broker-106/",
+        "type": "double"
+      },
+      {
+        "name": "broker-108/",
+        "type": "double"
+      },
+      {
+        "name": "broker-110/",
+        "type": "double"
+      },
+      {
+        "name": "zook-102/",
+        "type": "double"
+      },
+      {
+        "name": "zook-104/",
+        "type": "double"
+      },
+      {
+        "name": "broker-102/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-104/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-106/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-108/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-110/data",
+        "type": "double"
+      },
+      {
+        "name": "zook-102/data",
+        "type": "double"
+      },
+      {
+        "name": "zook-104/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-101/",
+        "type": "double"
+      },
+      {
+        "name": "broker-103/",
+        "type": "double"
+      },
+      {
+        "name": "broker-105/",
+        "type": "double"
+      },
+      {
+        "name": "broker-107/",
+        "type": "double"
+      },
+      {
+        "name": "broker-109/",
+        "type": "double"
+      },
+      {
+        "name": "zook-101/",
+        "type": "double"
+      },
+      {
+        "name": "zook-103/",
+        "type": "double"
+      },
+      {
+        "name": "zook-105/",
+        "type": "double"
+      },
+      {
+        "name": "broker-101/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-103/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-105/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-107/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-109/data",
+        "type": "double"
+      },
+      {
+        "name": "zook-101/data",
+        "type": "double"
+      },
+      {
+        "name": "zook-103/data",
+        "type": "double"
+      },
+      {
+        "name": "zook-105/data",
+        "type": "double"
+      }
+    ],
     "userModified": true
   },
   "dkuProperties": [],
