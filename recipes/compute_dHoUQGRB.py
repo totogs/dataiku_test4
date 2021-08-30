@@ -5,7 +5,7 @@ import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
 # Read recipe inputs
-json_prepared = dataiku.Dataset("json_stacked_distinct")
+json_prepared = dataiku.Dataset("data_distinct")
 df = json_prepared.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
@@ -86,7 +86,7 @@ def split_series(series, n_past, n_future):
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 n_past = 10
 n_future = 5
-n_features = 30
+n_features = 10
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 X_train, y_train = split_series(train.values,n_past, n_future)
@@ -124,18 +124,12 @@ model.summary()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 reduce_lr = tf.keras.callbacks.LearningRateScheduler(lambda x: 1e-3 * 0.90 ** x)
-model.compile(optimizer=tf.keras.optimizers.Adam(), loss=tf.keras.losses.Huber(), metrics=[tf.keras.metrics.MeanAbsoluteError()])
+model.compile(optimizer=tf.keras.optimizers.Adam(), loss=tf.keras.losses.Huber(), metrics=[tf.keras.metrics.CosineSimilarity(), tf.keras.metrics.MeanAbsoluteError()])
 history = model.fit(X_train,y_train,epochs=25,validation_data=(X_test,y_test),batch_size=32,verbose=0,callbacks=[reduce_lr])
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 print(history.history.keys())
-history.history["mean_absolute_error"]
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
-# # Prédiction sur les données de test
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-y_pred=model.predict(X_test)
+history.history["val_mean_absolute_error"]
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 for index,i in enumerate(train_df.columns):
@@ -152,7 +146,14 @@ model_json = model.to_json()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
-model_forecast = dataiku.Folder("dHoUQGRB")
-model_forecast_info = model_forecast.get_info()
+model_folder = dataiku.Folder("dHoUQGRB")
+model_folder_info = model_folder.get_info()
 
-model_forecast.write_json("model_json", model_json)
+model_folder.write_json("/model_json", model_json)
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+model_folder.list_paths_in_partition()
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+# NEW_FOLDER_NAME is the name of the folder you want to create
+os.mkdir(model_folder.get_path() + "/" + "okk")
