@@ -26,7 +26,10 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "steps": [],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
@@ -35,7 +38,19 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "date": 204,
+    "broker-103/data": 155,
+    "broker-105/data": 155,
+    "broker-109/data": 155,
+    "broker-104/data": 155,
+    "broker-108/data": 155,
+    "broker-107/data": 155,
+    "broker-101/data": 155,
+    "broker-110/data": 155,
+    "broker-106/data": 155,
+    "broker-102/data": 155
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
