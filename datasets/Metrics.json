@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1630338784197
+    "lastModifiedOn": 1630338837879
   },
   "creationTag": {
     "versionNumber": 0,
@@ -119,10 +119,11 @@
       },
       {
         "name": "time",
-        "type": "double"
+        "type": "date",
+        "meaning": "Date"
       }
     ],
-    "userModified": false
+    "userModified": true
   },
   "dkuProperties": [],
   "metrics": {
