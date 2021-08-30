@@ -11,6 +11,9 @@
           "map": {
             "json_2": {
               "repartition": 10
+            },
+            "data_stacked": {
+              "repartition": 10
             }
           }
         },
@@ -64,7 +67,7 @@
     "main": {
       "items": [
         {
-          "ref": "json_2_prepared",
+          "ref": "data_prepared",
           "appendMode": false
         }
       ]
@@ -72,11 +75,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1630332323490
+    "lastModifiedOn": 1630332368264
   },
   "creationTag": {
     "versionNumber": 0,
