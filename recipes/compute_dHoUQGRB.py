@@ -131,10 +131,16 @@ history = model.fit(X_train,y_train,epochs=25,validation_data=(X_test,y_test),ba
 print(history.history.keys())
 history.history["val_mean_absolute_error"]
 
+data_metrics = {}
+
+for key, val in history.history.items():
+    data_metrics[key] = val[-1]
+    
+print(data_metrics)
+
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 for index,i in enumerate(train_df.columns):
     scaler = scalers['scaler_'+i]
-    y_pred[:,:,index]=scaler.inverse_transform(y_pred[:,:,index])
     y_train[:,:,index]=scaler.inverse_transform(y_train[:,:,index])
     y_test[:,:,index]=scaler.inverse_transform(y_test[:,:,index])
 
@@ -149,11 +155,19 @@ model_json = model.to_json()
 model_folder = dataiku.Folder("dHoUQGRB")
 model_folder_info = model_folder.get_info()
 
-model_folder.write_json("/model_json", model_json)
+now = time.time()
+
+model_folder.write_json(str(now)+"/model_json", model_json)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 model_folder.list_paths_in_partition()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-# NEW_FOLDER_NAME is the name of the folder you want to create
-os.mkdir(model_folder.get_path() + "/" + "okk")
+metrics = dataiku.Dataset("Metrics")
+
+data_metrics['time'] = now
+df_metrics = pd.DataFrame(data_metrics)
+metrics.write_with_schema(df_metrics)
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+metrics.list()
