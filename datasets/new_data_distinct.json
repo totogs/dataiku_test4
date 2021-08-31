@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1630343953649
+    "lastModifiedOn": 1630396563294
   },
   "creationTag": {
     "versionNumber": 0,
@@ -89,6 +89,46 @@
       {
         "name": "date",
         "type": "date"
+      },
+      {
+        "name": "broker-102/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-104/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-106/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-108/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-110/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-101/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-103/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-105/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-107/data",
+        "type": "double"
+      },
+      {
+        "name": "broker-109/data",
+        "type": "double"
       }
     ],
     "userModified": true
