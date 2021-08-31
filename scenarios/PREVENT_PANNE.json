@@ -5,11 +5,11 @@
   "name": "prevent_panne",
   "active": false,
   "versionTag": {
-    "versionNumber": 60,
+    "versionNumber": 61,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1630403794390
+    "lastModifiedOn": 1630413727895
   },
   "checklists": {
     "checklists": []
@@ -28,14 +28,14 @@
       "delay": 5,
       "active": true,
       "params": {
-        "repeatFrequency": 150,
-        "frequency": "Minutely",
+        "repeatFrequency": 1,
+        "frequency": "Weekly",
         "startingFrom": "2021-08-24T13:29:00.000Z",
         "daysOfWeek": [
-          "Tuesday"
+          "Sunday"
         ],
-        "minute": 29,
-        "hour": 15,
+        "minute": 0,
+        "hour": 23,
         "timezone": "SERVER"
       }
     }
