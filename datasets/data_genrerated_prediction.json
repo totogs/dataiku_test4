@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1629897417668
+    "lastModifiedOn": 1630403159053
   },
   "creationTag": {
     "versionNumber": 0,
@@ -87,34 +87,6 @@
   "schema": {
     "columns": [
       {
-        "name": "broker-102/",
-        "type": "float"
-      },
-      {
-        "name": "broker-104/",
-        "type": "float"
-      },
-      {
-        "name": "broker-106/",
-        "type": "float"
-      },
-      {
-        "name": "broker-108/",
-        "type": "float"
-      },
-      {
-        "name": "broker-110/",
-        "type": "float"
-      },
-      {
-        "name": "zook-102/",
-        "type": "float"
-      },
-      {
-        "name": "zook-104/",
-        "type": "float"
-      },
-      {
         "name": "broker-102/data",
         "type": "float"
       },
@@ -135,46 +107,6 @@
         "type": "float"
       },
       {
-        "name": "zook-102/data",
-        "type": "float"
-      },
-      {
-        "name": "zook-104/data",
-        "type": "float"
-      },
-      {
-        "name": "broker-101/",
-        "type": "float"
-      },
-      {
-        "name": "broker-103/",
-        "type": "float"
-      },
-      {
-        "name": "broker-105/",
-        "type": "float"
-      },
-      {
-        "name": "broker-107/",
-        "type": "float"
-      },
-      {
-        "name": "broker-109/",
-        "type": "float"
-      },
-      {
-        "name": "zook-101/",
-        "type": "float"
-      },
-      {
-        "name": "zook-103/",
-        "type": "float"
-      },
-      {
-        "name": "zook-105/",
-        "type": "float"
-      },
-      {
         "name": "broker-101/data",
         "type": "float"
       },
@@ -192,18 +124,6 @@
       },
       {
         "name": "broker-109/data",
-        "type": "float"
-      },
-      {
-        "name": "zook-101/data",
-        "type": "float"
-      },
-      {
-        "name": "zook-103/data",
-        "type": "float"
-      },
-      {
-        "name": "zook-105/data",
         "type": "float"
       },
       {
