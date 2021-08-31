@@ -1,4 +1,3 @@
-
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # -*- coding: utf-8 -*-
 import dataiku
@@ -6,8 +5,8 @@ import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
 # Read recipe inputs
-new_train_data = dataiku.Dataset("new_train_data")
-df_new_train = new_train_data.get_dataframe()
+data = dataiku.Dataset("new_train_data")
+df = data.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 import math
@@ -136,7 +135,7 @@ data_metrics = {}
 
 for key, val in history.history.items():
     data_metrics[key] = [val[-1]]
-    
+
 print(data_metrics)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
@@ -159,7 +158,6 @@ model_folder_info = model_folder.get_info()
 now = time.time()
 
 model_folder.write_json(str(now)+"/model_json", model_json)
-model_folder.write_json("actual/model_json", model_json)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 model_folder.list_paths_in_partition()
@@ -169,9 +167,24 @@ model_folder.list_paths_in_partition()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 metrics = dataiku.Dataset("Metrics")
+df_metrics = metrics.get_dataframe()
 
-data_metrics['time'] = [now]
-data_metrics["used"] = ["True"]
-df_metrics = pd.DataFrame(data_metrics)
+data_metrics["time"] = [now]
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+df_metrics
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+if data_metrics["val_mean_absolute_error"] < df_metrics[df_metrics["used"]==True]["val_mean_absolute_error"].all():
+    
+    data_metrics["used"] = ["True"]
+    df_metrics["used"] = df_metrics["used"].where(df_metrics["used"]=="True", "False")
+    model_folder.write_json("actual/model_json", model_json)
+else:
+    
+    data_metrics["used"] = ["False"]
+    
+df_metrics = df_metrics.append(pd.DataFrame(data_metrics))
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 metrics.write_with_schema(df_metrics)
