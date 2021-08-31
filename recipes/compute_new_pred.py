@@ -6,8 +6,8 @@ import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
 # Read recipe inputs
-json_prepared = dataiku.Dataset("new_train_data")
-df = json_prepared.get_dataframe()
+new_train_data = dataiku.Dataset("new_train_data")
+df_new_train = new_train_data.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 import math
