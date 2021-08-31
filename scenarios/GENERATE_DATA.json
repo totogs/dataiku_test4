@@ -5,11 +5,11 @@
   "name": "generate_data",
   "active": false,
   "versionTag": {
-    "versionNumber": 23,
+    "versionNumber": 24,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1630405174518
+    "lastModifiedOn": 1630413680958
   },
   "checklists": {
     "checklists": []
@@ -20,7 +20,26 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "SUYcaRl3",
+      "type": "temporal",
+      "name": "Time-based",
+      "delay": 5,
+      "active": true,
+      "params": {
+        "repeatFrequency": 150,
+        "frequency": "Minutely",
+        "startingFrom": "2021-08-31T12:40:00.000Z",
+        "daysOfWeek": [
+          "Tuesday"
+        ],
+        "minute": 40,
+        "hour": 14,
+        "timezone": "SERVER"
+      }
+    }
+  ],
   "reporters": [],
   "params": {
     "steps": [
