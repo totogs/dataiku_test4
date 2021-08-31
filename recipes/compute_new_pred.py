@@ -138,12 +138,6 @@ for key, val in history.history.items():
 
 print(data_metrics)
 
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-for index,i in enumerate(train_df.columns):
-    scaler = scalers['scaler_'+i]
-    y_train[:,:,index]=scaler.inverse_transform(y_train[:,:,index])
-    y_test[:,:,index]=scaler.inverse_transform(y_test[:,:,index])
-
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
 # # Stockage du modèle dans le folder
 
@@ -163,7 +157,7 @@ model_folder.write_json(str(now)+"/model_json", model_json)
 model_folder.list_paths_in_partition()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
-# # Stockage des métriques dans un dataframe
+# # Calcul du drift du nouveau modèle
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 metrics = dataiku.Dataset("Metrics")
@@ -175,7 +169,18 @@ data_metrics["time"] = [now]
 df_metrics
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-if data_metrics["val_mean_absolute_error"] < df_metrics[df_metrics["used"]==True]["val_mean_absolute_error"].all():
+json_actual_model = model_folder.read_json("actual/model_json")
+actual_model = keras.models.model_from_json(json_actual_model)
+actual_model.compile(optimizer=tf.keras.optimizers.Adam(), loss=tf.keras.losses.Huber(), metrics=[tf.keras.metrics.CosineSimilarity(), tf.keras.metrics.MeanAbsoluteError()])
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+results = model.evaluate(X_test, y_test, batch_size=32)
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+val_mean_absolute_error = results[2]
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+if data_metrics["val_mean_absolute_error"] < val_mean_absolute_error:
     
     data_metrics["used"] = ["True"]
     df_metrics["used"] = df_metrics["used"].where(df_metrics["used"]=="True", "False")
@@ -188,3 +193,9 @@ df_metrics = df_metrics.append(pd.DataFrame(data_metrics))
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 metrics.write_with_schema(df_metrics)
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+for index,i in enumerate(train_df.columns):
+    scaler = scalers['scaler_'+i]
+    y_train[:,:,index]=scaler.inverse_transform(y_train[:,:,index])
+    y_test[:,:,index]=scaler.inverse_transform(y_test[:,:,index])
