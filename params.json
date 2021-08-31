@@ -22,10 +22,28 @@
       "exportGitRepository": false,
       "exportInsightsData": false,
       "useManualPluginsInfo": false,
-      "includedDatasetsData": [],
+      "includedDatasetsData": [
+        {
+          "name": "Metrics",
+          "type": "GCS"
+        },
+        {
+          "name": "new_data_distinct",
+          "type": "Filesystem"
+        },
+        {
+          "name": "new_train_data",
+          "type": "GCS"
+        }
+      ],
       "includedSavedModels": [],
       "includedModelEvaluationStores": [],
-      "includedManagedFolders": [],
+      "includedManagedFolders": [
+        {
+          "id": "dHoUQGRB",
+          "name": "model_forecast"
+        }
+      ],
       "shareAllInputDatasets": false
     }
   },
@@ -201,11 +219,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1630404291215
+    "lastModifiedOn": 1630404367460
   },
   "creationTag": {
     "versionNumber": 0,
