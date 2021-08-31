@@ -5,11 +5,11 @@
   "name": "generate_data",
   "active": false,
   "versionTag": {
-    "versionNumber": 21,
+    "versionNumber": 22,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1630396741544
+    "lastModifiedOn": 1630403510077
   },
   "checklists": {
     "checklists": []
@@ -27,7 +27,7 @@
       {
         "id": "custom_python_ppdP0jbiFzyIFeLNyM8/fg",
         "type": "custom_python",
-        "name": "Step #1",
+        "name": "generate data",
         "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
           "SUCCESS",
