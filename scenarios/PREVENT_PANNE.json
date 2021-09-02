@@ -5,11 +5,11 @@
   "name": "prevent_panne",
   "active": false,
   "versionTag": {
-    "versionNumber": 64,
+    "versionNumber": 65,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1630574973116
+    "lastModifiedOn": 1630574978911
   },
   "checklists": {
     "checklists": []
@@ -57,13 +57,7 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "builds": [
-            {
-              "type": "DATASET",
-              "itemId": "new_data_distinct",
-              "partitionsSpec": ""
-            }
-          ],
+          "builds": [],
           "jobType": "RECURSIVE_FORCED_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
