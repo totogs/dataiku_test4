@@ -1861,7 +1861,8 @@
       "enabled": true,
       "kerasInputs": [
         "main"
-      ]
+      ],
+      "buildCode": "from keras.layers import Input, Dense\nfrom keras.models import Model\n\n# Define the keras architecture of your model in \u0027build_model\u0027 and return it. Compilation must be done in \u0027compile_model\u0027.\n#   input_shapes  - dictionary of shapes per input as defined in features handling\n#   n_classes - For classification, number of target classes\ndef build_model(input_shapes, n_classes\u003dNone):\n\n    # This input will receive all the preprocessed features\n    # sent to \u0027main\u0027\n    input_main \u003d Input(shape\u003dinput_shapes[\"main\"], name\u003d\"main\")\n\n    x \u003d Dense(64, activation\u003d\u0027relu\u0027)(input_main)\n    x \u003d Dense(64, activation\u003d\u0027relu\u0027)(x)\n\n    predictions \u003d Dense(1)(x)\n\n    # The \u0027inputs\u0027 parameter of your model must contain the\n    # full list of inputs used in the architecture\n    model \u003d Model(inputs\u003d[input_main], outputs\u003dpredictions)\n\n    return model\n\n# Compile your model and return it\n#   model   - model defined in \u0027build_model\u0027\ndef compile_model(model):\n    \n    # The loss function depends on the type of problem you solve.\n    # \u0027mse\u0027 is appropriate for a regression.\n    model.compile(optimizer\u003d\u0027rmsprop\u0027,\n                  loss\u003d\u0027mse\u0027)\n\n    return model"
     },
     "grid_search": true,
     "gridSearchParams": {
