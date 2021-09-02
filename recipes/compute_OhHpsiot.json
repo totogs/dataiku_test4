@@ -61,7 +61,7 @@
       "evaluation_strategy": "split",
       "external_feature_activated": false,
       "evaluation_only": false,
-      "use_gpu": true,
+      "use_gpu": false,
       "gpu_location": "container_gpu",
       "target_columns": [
         "broker-101/data",
@@ -130,11 +130,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1630585516020
+    "lastModifiedOn": 1630590568842
   },
   "creationTag": {
     "versionNumber": 0,
