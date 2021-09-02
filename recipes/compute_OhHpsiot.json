@@ -36,7 +36,7 @@
       "npts_model_kwargs": {
         "use_seasonal_model": "True"
       },
-      "simplefeedforward_model_activated": true,
+      "simplefeedforward_model_activated": false,
       "simplefeedforward_model_kwargs": {
         "num_hidden_dimensions": "[40, 40]"
       },
@@ -130,11 +130,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1630590568842
+    "lastModifiedOn": 1630590575608
   },
   "creationTag": {
     "versionNumber": 0,
