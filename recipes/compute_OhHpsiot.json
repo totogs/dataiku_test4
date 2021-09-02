@@ -4,15 +4,15 @@
   "optionalDependencies": false,
   "params": {
     "customConfig": {
-      "frequency_unit": "D",
+      "frequency_unit": "min",
       "frequency_end_of_week": "SUN",
       "frequency_step_hours": 1,
-      "frequency_step_minutes": 1,
+      "frequency_step_minutes": 15,
       "additional_columns": false,
       "sampling_method": "last_records",
       "number_records": 10000,
-      "prediction_length": 1,
-      "forecasting_style": "auto",
+      "prediction_length": 5,
+      "forecasting_style": "choose_algorithms",
       "season_length_min": 1,
       "season_length_H": 24,
       "season_length_D": 7,
@@ -22,9 +22,9 @@
       "season_length_3M": 4,
       "season_length_6M": 2,
       "season_length_12M": 1,
-      "trivial_identity_model_activated": true,
-      "seasonal_naive_model_activated": true,
-      "autoarima_model_activated": false,
+      "trivial_identity_model_activated": false,
+      "seasonal_naive_model_activated": false,
+      "autoarima_model_activated": true,
       "autoarima_model_kwargs": {
         "seasonal": "True"
       },
@@ -55,18 +55,30 @@
       "nbeats_model_activated": false,
       "nbeats_model_kwargs": {},
       "epoch": 10,
-      "batch_size": 128,
+      "batch_size": 32,
       "auto_num_batches_per_epoch": false,
-      "num_batches_per_epoch": 50,
+      "num_batches_per_epoch": 100,
       "evaluation_strategy": "split",
       "external_feature_activated": false,
       "evaluation_only": false,
       "use_gpu": true,
       "gpu_location": "container_gpu",
-      "target_columns": [],
+      "target_columns": [
+        "broker-101/data",
+        "broker-102/data",
+        "broker-103/data",
+        "broker-105/data",
+        "broker-104/data",
+        "broker-106/data",
+        "broker-107/data",
+        "broker-108/data",
+        "broker-109/data",
+        "broker-110/data"
+      ],
       "timeseries_identifiers": [],
       "external_feature_columns": [],
-      "gpu_devices": []
+      "gpu_devices": [],
+      "time_column": "date"
     },
     "containerSelection": {
       "containerMode": "EXPLICIT_CONTAINER",
@@ -118,11 +130,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1630575638932
+    "lastModifiedOn": 1630575725327
   },
   "creationTag": {
     "versionNumber": 0,
