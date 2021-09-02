@@ -161,7 +161,7 @@
       }
     }
   },
-  "name": "Logs analysis",
+  "name": "Logs analysis v2",
   "imgPattern": 6,
   "metrics": {
     "probes": [],
@@ -218,11 +218,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1630574945232
+    "lastModifiedOn": 1630574948427
   },
   "creationTag": {
     "versionNumber": 0,
@@ -231,7 +231,7 @@
     },
     "lastModifiedOn": 1628850172461
   },
-  "shortDesc": "The project *Logs analysis* was created by Olivier LEHE on Aug 13th 2021",
+  "shortDesc": "The project *Logs analysis* was created by Olivier LEHE on Aug 13th 2021\nThe project *LOGSANALYSISV2* was copied from *LOGSANALYSIS* by Tony Gosse on Sep 02nd 2021",
   "tags": [
     "duplicated"
   ],
