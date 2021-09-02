@@ -47,7 +47,7 @@
       "shareAllInputDatasets": false
     }
   },
-  "owner": "admin",
+  "owner": "tony",
   "permissions": [],
   "additionalDashboardUsers": {
     "users": []
@@ -162,7 +162,6 @@
     }
   },
   "name": "Logs analysis",
-  "projectStatus": "Sandbox",
   "imgPattern": 6,
   "metrics": {
     "probes": [],
@@ -219,11 +218,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1630404367460
+    "lastModifiedOn": 1630574945232
   },
   "creationTag": {
     "versionNumber": 0,
@@ -233,7 +232,9 @@
     "lastModifiedOn": 1628850172461
   },
   "shortDesc": "The project *Logs analysis* was created by Olivier LEHE on Aug 13th 2021",
-  "tags": [],
+  "tags": [
+    "duplicated"
+  ],
   "customFields": {},
   "checklists": {
     "checklists": []
