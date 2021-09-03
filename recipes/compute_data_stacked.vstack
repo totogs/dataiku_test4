@@ -68,6 +68,7 @@
       }
     }
   },
+  "engineType": "DSS",
   "virtualInputs": [
     {
       "preFilter": {
@@ -78,143 +79,15 @@
       "index": 0
     },
     {
-      "preFilter": {},
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
       "originLabel": "Json",
       "index": 1
     }
   ],
   "postFilter": {
-    "$status": {
-      "schema": {
-        "columns": [
-          {
-            "name": "Timestamp",
-            "type": "string"
-          },
-          {
-            "name": "broker-102/",
-            "type": "string"
-          },
-          {
-            "name": "broker-104/",
-            "type": "string"
-          },
-          {
-            "name": "broker-106/",
-            "type": "string"
-          },
-          {
-            "name": "broker-108/",
-            "type": "string"
-          },
-          {
-            "name": "broker-110/",
-            "type": "string"
-          },
-          {
-            "name": "zook-102/",
-            "type": "string"
-          },
-          {
-            "name": "zook-104/",
-            "type": "string"
-          },
-          {
-            "name": "broker-102/data",
-            "type": "string"
-          },
-          {
-            "name": "broker-104/data",
-            "type": "string"
-          },
-          {
-            "name": "broker-106/data",
-            "type": "string"
-          },
-          {
-            "name": "broker-108/data",
-            "type": "string"
-          },
-          {
-            "name": "broker-110/data",
-            "type": "string"
-          },
-          {
-            "name": "zook-102/data",
-            "type": "string"
-          },
-          {
-            "name": "zook-104/data",
-            "type": "string"
-          },
-          {
-            "name": "broker-101/",
-            "type": "string"
-          },
-          {
-            "name": "broker-103/",
-            "type": "string"
-          },
-          {
-            "name": "broker-105/",
-            "type": "string"
-          },
-          {
-            "name": "broker-107/",
-            "type": "string"
-          },
-          {
-            "name": "broker-109/",
-            "type": "string"
-          },
-          {
-            "name": "zook-101/",
-            "type": "string"
-          },
-          {
-            "name": "zook-103/",
-            "type": "string"
-          },
-          {
-            "name": "zook-105/",
-            "type": "string"
-          },
-          {
-            "name": "broker-101/data",
-            "type": "string"
-          },
-          {
-            "name": "broker-103/data",
-            "type": "string"
-          },
-          {
-            "name": "broker-105/data",
-            "type": "string"
-          },
-          {
-            "name": "broker-107/data",
-            "type": "string"
-          },
-          {
-            "name": "broker-109/data",
-            "type": "string"
-          },
-          {
-            "name": "zook-101/data",
-            "type": "string"
-          },
-          {
-            "name": "zook-103/data",
-            "type": "string"
-          },
-          {
-            "name": "zook-105/data",
-            "type": "string"
-          }
-        ],
-        "userModified": false
-      }
-    },
     "distinct": false,
     "enabled": false
   },
