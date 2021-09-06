@@ -162,7 +162,7 @@
       }
     }
   },
-  "name": "Copy of Logs analysis v3",
+  "name": "Copy of Logs analysis v3 (test)",
   "imgPattern": 6,
   "metrics": {
     "probes": [],
@@ -219,11 +219,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1630934579542
+    "lastModifiedOn": 1630934582505
   },
   "creationTag": {
     "versionNumber": 0,
@@ -232,7 +232,7 @@
     },
     "lastModifiedOn": 1628850172461
   },
-  "shortDesc": "The project *Logs analysis* was created by Olivier LEHE on Aug 13th 2021\nThe project *LOGSANALYSISV2* was copied from *LOGSANALYSIS* by Tony Gosse on Sep 02nd 2021\nThe project *COPYOFLOGSANALYSISV3* was copied from *LOGSANALYSISV2* by dssuser on Sep 06th 2021",
+  "shortDesc": "The project *Logs analysis* was created by Olivier LEHE on Aug 13th 2021\nThe project *LOGSANALYSISV2* was copied from *LOGSANALYSIS* by Tony Gosse on Sep 02nd 2021\nThe project *COPYOFLOGSANALYSISV3* was copied from *LOGSANALYSISV2* by dssuser on Sep 06th 2021\nThe project *COPY_OF_LOGS_ANALYSIS_V3_TEST* was copied from *COPYOFLOGSANALYSISV3* by Tony Gosse on Sep 06th 2021",
   "tags": [
     "duplicated"
   ],
