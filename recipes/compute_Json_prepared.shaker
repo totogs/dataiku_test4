@@ -26,8 +26,26 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "broker-102/"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -35,7 +53,39 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "broker-103/data": 155,
+    "zook-101/": 141,
+    "broker-109/data": 155,
+    "broker-101/": 141,
+    "zook-105/data": 148,
+    "Timestamp": 113,
+    "zook-103/": 141,
+    "zook-103/data": 148,
+    "broker-106/data": 155,
+    "zook-105/": 141,
+    "broker-109/": 141,
+    "broker-107/": 141,
+    "broker-105/": 141,
+    "broker-105/data": 155,
+    "broker-108/data": 155,
+    "broker-103/": 141,
+    "broker-110/data": 155,
+    "broker-102/data": 155,
+    "zook-104/data": 148,
+    "zook-101/data": 148,
+    "zook-102/": 141,
+    "broker-102/": 141,
+    "broker-110/": 141,
+    "broker-101/data": 155,
+    "zook-104/": 141,
+    "broker-108/": 141,
+    "broker-106/": 141,
+    "zook-102/data": 148,
+    "broker-104/data": 155,
+    "broker-104/": 141,
+    "broker-107/data": 155
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
