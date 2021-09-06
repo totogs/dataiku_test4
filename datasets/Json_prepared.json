@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "tony"
     },
-    "lastModifiedOn": 1630922230880
+    "lastModifiedOn": 1630922246420
   },
   "creationTag": {
     "versionNumber": 0,
@@ -92,10 +92,6 @@
       {
         "name": "Timestamp",
         "type": "bigint"
-      },
-      {
-        "name": "broker-102/",
-        "type": "double"
       },
       {
         "name": "broker-104/",
